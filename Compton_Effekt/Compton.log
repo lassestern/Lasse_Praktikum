@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  3 MAY 2020 13:35
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  3 MAY 2020 17:31
  restricted system commands enabled.
 **Compton.tex
 (./Compton.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.113 seconds
+luaotfload | main : initialization completed in 0.159 seconds
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1493,7 +1493,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 60.
 
 \openout3 = Compton.toc
  [2]
-<SkizzeCompton.png, id=57, 281.05pt x 183.68625pt>
+<SkizzeCompton.png, id=55, 281.05pt x 183.68625pt>
 File: SkizzeCompton.png Graphic file (type png)
 <use SkizzeCompton.png>
 Package luatex.def Info: SkizzeCompton.png  used on input line 103.
@@ -1503,32 +1503,32 @@ Package luatex.def Info: SkizzeCompton.png  used on input line 103.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3] [4<./SkizzeCompton.png>]
-<Bragg.png, id=81, 359.3425pt x 225.84375pt>
+<Bragg.png, id=79, 359.3425pt x 225.84375pt>
 File: Bragg.png Graphic file (type png)
 <use Bragg.png>
 Package luatex.def Info: Bragg.png  used on input line 146.
 (luatex.def)             Requested size: 359.34161pt x 225.84319pt.
  [5<./Bragg.png>] [6]
-<absorber.png, id=102, 533.995pt x 233.87375pt>
+<absorber.png, id=100, 533.995pt x 233.87375pt>
 File: absorber.png Graphic file (type png)
 <use absorber.png>
-Package luatex.def Info: absorber.png  used on input line 195.
+Package luatex.def Info: absorber.png  used on input line 196.
 (luatex.def)             Requested size: 334.60571pt x 146.55255pt.
  [7<./absorber.png>]
-<Spektrum_Cu.pdf, id=111, 462.528pt x 346.896pt>
+<Spektrum_Cu.pdf, id=109, 462.528pt x 346.896pt>
 File: Spektrum_Cu.pdf Graphic file (type pdf)
 <use Spektrum_Cu.pdf>
-Package luatex.def Info: Spektrum_Cu.pdf  used on input line 232.
+Package luatex.def Info: Spektrum_Cu.pdf  used on input line 238.
 (luatex.def)             Requested size: 376.42744pt x 282.33397pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8] [9<./Spektrum_Cu.pdf>]
-<Compton_Alu.pdf, id=182, 462.528pt x 346.896pt>
+<Compton_Alu.pdf, id=187, 462.528pt x 346.896pt>
 File: Compton_Alu.pdf Graphic file (type pdf)
 <use Compton_Alu.pdf>
-Package luatex.def Info: Compton_Alu.pdf  used on input line 282.
+Package luatex.def Info: Compton_Alu.pdf  used on input line 294.
 (luatex.def)             Requested size: 376.42744pt x 282.33397pt.
 
 
@@ -1540,46 +1540,46 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.99425pt too wide) in paragraph at lines 323--326
+Overfull \hbox (1.99425pt too wide) in paragraph at lines 356--359
 \TU/lmr/m/n/10.95 03.Mai.2020 []$\TU/lmtt/m/n/10.95 http://www.phywe-[]ru.com/i
 ndex.php/fuseaction/download/lrn_file/
  []
 
 [13]
-Overfull \hbox (49.94916pt too wide) in paragraph at lines 335--373
+Overfull \hbox (49.94916pt too wide) in paragraph at lines 368--406
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
-[14] [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 409.
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 409.
  (./Compton.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 409.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 409.
 
 
 Package rerunfilecheck Warning: File `Compton.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `Compton.aux':
-(rerunfilecheck)             Before: 23B801BFEAB78DF0AA255E0BE6788FD1;13777
-(rerunfilecheck)             After:  F25534C4A078FB26545148716BEC7B06;13904.
+(rerunfilecheck)             Before: 04E43919C1823B714E4CBC69C543FD71;13886
+(rerunfilecheck)             After:  8C062C48BBD647978AC59E2D852806C1;14013.
 Package rerunfilecheck Info: File `Compton.toc' has not changed.
-(rerunfilecheck)             Checksum: 669ECADEBD4E869DF6BD4B56DF186EEF;1477.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
+(rerunfilecheck)             Checksum: 0AA8ABE7504E3C24105FDA17815462EC;1413.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 409.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33238 strings out of 494291
+ 33240 strings out of 494291
  156265,1144653 words of node,token memory allocated
- 108982 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 13796 glyph, 5193 attrib
-ute, 65 glue_spec, 744 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:4,2:2551,3:126,4:30,5:181,6:34,7:2769,8:109,9:332,10:23,11:406
+ 119626 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 15232 glyph, 5452 attrib
+ute, 65 glue_spec, 781 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:6,2:2538,3:120,4:42,5:178,6:32,7:2778,8:109,9:331,10:26,11:418
 
- 36563 multiletter control sequences out of 65536+600000
+ 36565 multiletter control sequences out of 65536+600000
  92 fonts using 36062895 bytes
  54i,13n,109p,9117b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-re
@@ -1593,10 +1593,10 @@ e/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regula
 r.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmrom
 an12-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/publ
 ic/lm/lmsans10-bold.otf>
-Output written on Compton.pdf (15 pages, 121400 bytes).
+Output written on Compton.pdf (14 pages, 125440 bytes).
 
-PDF statistics: 397 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
+PDF statistics: 399 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
  67 named destinations out of 1000 (max. 131072)
- 137 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 129 words of extra memory for PDF output out of 10000 (max. 100000000)
 

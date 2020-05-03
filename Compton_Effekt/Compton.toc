@@ -15,4 +15,3 @@
 \contentsline {subsection}{\numberline {4.3}Bestimmung der Compton-Wellenlänge}{11}{subsection.4.3}% 
 \contentsline {section}{\numberline {5}Diskussion}{12}{section.5}% 
 \contentsline {section}{\numberline {6}Literaturverzeichnis}{13}{section.6}% 
-\contentsline {section}{\numberline {7}Anhang}{14}{section.7}% 

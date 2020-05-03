@@ -99,7 +99,7 @@
         \FloatBarrier
         \begin{figure}[h]
             \centering
-            \caption{In der Abbildung ist der Compton Effekt skizziert. Der eingezeichnete Winkel $\theta$ ist der Streuwinkel des Photons.}
+            \caption{In der Abbildung ist der Compton Effekt skizziert. Der eingezeichnete Winkel $\theta$ ist der Streuwinkel des Photons.[1]}
             \includegraphics{SkizzeCompton.png}
             \label{fig:SkizzeCompton}
         \end{figure}
@@ -142,20 +142,20 @@
         \FloatBarrier
         \begin{figure}[h]
             \centering
-            \caption{In der Abbildung ist die Bragg-Reflexion skizziert. Der Winkel $\alpha$ ist der Bragg-Winkel und d die Gitterkonstante.}
+            \caption{In der Abbildung ist die Bragg-Reflexion skizziert. Der Winkel $\alpha$ ist der Bragg-Winkel und d die Gitterkonstante.[1]}
             \includegraphics{Bragg.png}
             \label{fig:SkizzeBragg}
         \end{figure}
         \FloatBarrier
 
-        \subsection{Geiger-Müller-Zählrohr}
+        \subsection{Geiger-Müller-Zählrohr} \label{Geiger}
         Zur Messung der Impulsrate wird ein Geiger-Müller-Zählrohr genutzt. Dieses besteht aus einem mit gefülltem Zylinder, dessen Wand eine große
         Kathode ist. Im Zentrum des Zylinders befindet sich eine Stabanode. Wenn nun ionisierende Strahlung in den Zylinder strahlt, treffen die Photonen
         auf Gasatome und ionisieren diese. Die dabei frei werdenden Elektronen treffen auf den Anodenmantel und werden als einzelner Impuls regestriert. Jedes
         ionisierte Gasatom wandert zur Stabanode, um neutral geladen zu werden und so wieder ionisierbar zu sein. Daraus folgt das Problem der Totzeit. Es 
-        tritt auf, wenn die Intensität der Strahöung so hoch ist, dass alle Atome ionisiert sind und so nicht die gesamte Intensität gemessen wird. So würde die
-        gemessene Intensität trotz kontinuierlich steigender Strahlungsintensität gegen einen Grenzwert laufen. Dieser Effekt wird über die Totzeitkorrektur 
-        \ref{eqn:Totzeitkorrektur} behoben. Dabei beschreibt N die Impulsrate und $\tau$ die Totzeit.
+        tritt auf, wenn die Intensität der Strahlung so hoch ist, dass alle Atome ionisiert sind und so nicht die gesamten Impulse gemessen werden. So würde 
+        die gemessene Impulsrate trotz kontinuierlich steigender Strahlungsintensität gegen einen Grenzwert laufen. Dieser Effekt wird über die 
+        Totzeitkorrektur \ref{eqn:Totzeitkorrektur} behoben. Dabei beschreibt I die korrigierte Impulsrate, N die Impulsrate und $\tau$ die Totzeit.
         
         \begin{equation}
             I = \frac{N}{1-\tau \cdot N}
@@ -165,8 +165,9 @@
 
     \section{Durchführung}
         \subsection{Aufnahme des Röntgenspektrums}
-        Um die für den Compton-Effekt notwendige Röntgenstrahlung zu erzeugen, wird eine Röntgenröhre benutzt, die wie bereits beschrieben ein ganzes 
-        Spektrum an Röntgenstrahlung aussendet. In diesem Fall verwendet die Röntgenröhre eine Kupferanode zur Röntgenerzeugung. Um das Spektrum der 
+        Um die für den Compton-Effekt notwendige Röntgenstrahlung zu erzeugen, wird eine Kupfer-Röntgenröhre benutzt, die wie bereits beschrieben ein ganzes 
+        Spektrum an Röntgenstrahlung aussendet. In diesem Fall verwendet die Röntgenröhre eine Kupferanode zur Röntgenerzeugung und beschleunigt die Elektronen
+        fortlaufend mit 35kV. Um das Spektrum der 
         erzeugten Röntgenstrahlung darzustellen, wird ein Lithiumfluoridkristall in einem Winkel in den Röntgenstrahl gestellt. Das Geiger-Müller-Zählrohr
         wird im doppelten Winkel des Kristalls zu diesem ausgerichtet. So wird die Bragg-Reflexion ausgenutzt und das Geiger-Müller-Zählrohr misst nur die
         Impulsrate eines speziellen Braggwinkels, dem über Formel \ref{eqn:Bragg} eine Wellenlänge des Röntgenspektrums zugeordnet werden kann. Die Messreihe
@@ -175,23 +176,23 @@
         \subsection{Bestimmung der Wellenlängenabhängigkeit der Transmission}
         Für die spätere Bestimmung der Compton-Wellenlänge muss zunächst die Abhängigkeit der Transmission von der Wellenlänge bestimmt werden. Dazu wird dem
         Aufbau zur Aufnahme des Röntgenspektrums ein Aluminium-Absorber hinzugefügt, der zunächst vor der Blende der Röntgenröhre platziert wird. Dann wird 
-        wieder der Anstellwinkel des Kristalls zum Röntgenstrahl von 7° bis 10° in 0,1° Schritten variiert und dabei die Intensität der Bragg reflektierten
+        wieder der Anstellwinkel des Kristalls zum Röntgenstrahl von 7° bis 10° in 0,1° Schritten variiert und dabei die Impulsrate der Bragg reflektierten
         Strahlung gemessen. Dieselbe Messung wird ohne eingesetzten Aluminium-Absorber wiederholt, um in der Auswertung die Transmission des Aluminium-
         Absorbers zu bestimmen.
 
         \subsection{Bestimmung der Compton-Wellenlänge}
-        Bei der Messung der Intensität der compton-gestreuten Photonen werden nur die um 90° gestreuten Photonen gemessen, indem das Geiger-Müller-Zählrohr
+        Bei der Messung der Impulsrate der compton-gestreuten Photonen werden nur die um 90° gestreuten Photonen gemessen, indem das Geiger-Müller-Zählrohr
         in eben jenen 90° Grad zum Röntgenstrahl platziert wird \ref{fig:SkizzeAbsorber}. 
-        Zunächts muss die Grundintensität $I_0$ der compton gestreuten Photonen aus der Röntgenröhre gemessen werden. Dazu wird ohne Einsatz eines Absorbers
+        Zunächts muss die Grundimpulsrate $I_0$ der compton-gestreuten Photonen aus der Röntgenröhre gemessen werden. Dazu wird ohne Einsatz eines Absorbers
         die an einem Plexiglas gestreute Röntgenstrahlung gemessen. Der Plexiglas-Streuer wird dazu in einem 45° Winkel in dem Röntgenstrahl platziert und es 
-        wird eine Intensität aufgenommen. Daraufhin wird der Aluminium-Absorber vor die Blende gesetzt \ref{fig:SkizzeAbsorber} und bei restlich gleich bleibendem Aufbau wieder
-        eine Intensität $I_1$ gemessen. Zuletzt wird der Aluminium-Absorber zwischen das Geiger-Müller-Zählrohr und den Plexiglas-Streuer gesetzt  
-        \ref{fig:SkizzeCompton} und wieder bei restlich gleich bleibendem eine Intensität $I_2$ gemessen.
+        wird eine Impulsrate aufgenommen. Daraufhin wird der Aluminium-Absorber vor die Blende gesetzt \ref{fig:SkizzeAbsorber} und bei restlich gleich bleibendem Aufbau wieder
+        eine Impulsrate $I_1$ gemessen. Zuletzt wird der Aluminium-Absorber zwischen das Geiger-Müller-Zählrohr und den Plexiglas-Streuer gesetzt  
+        \ref{fig:SkizzeCompton} und wieder bei restlich gleich bleibendem eine Impulsrate $I_2$ gemessen.
 
         \FloatBarrier
         \begin{figure}[h]
             \centering
-            \caption{In der Abbildung ist der Aufbau zur Messung der Intensitäten der gestreuten Strahlung zu sehen. Während in Teil a) der Aufbau zur Messung von $I_1$ und in Teil b) der zu $I_2$ dargestellt ist, entspricht der Aufbau zur Messung $I_0$ beiden gezeigten bei Entfernung des Aluminium-Absorbers.}
+            \caption{In der Abbildung ist der Aufbau zur Messung der Impulsraten der gestreuten Strahlung zu sehen. Während in Teil a) der Aufbau zur Messung von $I_1$ und in Teil b) der zu $I_2$ dargestellt ist, entspricht der Aufbau zur Messung $I_0$ beiden gezeigten bei Entfernung des Aluminium-Absorbers.[1]}
             \includegraphics[width = 0.8\linewidth]{absorber.png}
             \label{fig:SkizzeAbsorber}
         \end{figure} 
@@ -201,8 +202,13 @@
 
     \newpage
     \section{Auswertung}
+        In der gesamten Auswertung werden Ungenauigkeiten von Werten, die von fehlerbehafteten Größen abhängig sind, über die Gauß'sche Fehlerfortpflanzung 
+        für $n$ fehlerbehaftete Größen $x_i$ berechnet.
+        \begin{equation}
+            \Delta f = \sqrt{\sum_{i=1}^n \left(\frac{\partial f}{\partial x_i} \cdot \Delta x_i\right)}
+        \end{equation}
         \subsection{Röntgenspektrum}
-        Zunächst werden die zur $K_{\alpha}$ und zur $K_{\beta}$ gehörigen Wellenlängen über die literarischen Werte der zugehörigen Energien (ref) 
+        Zunächst werden die zur $K_{\alpha}$ und zur $K_{\beta}$ gehörigen Wellenlängen über die literarischen Werte der zugehörigen Energien [2] 
         berechnet, indem Formel \ref{eqn:EPhoton} nach der Wellenlänge umgestellt wird.
 
         \begin{align}
@@ -217,23 +223,23 @@
         folgende Winkel:
 
         \begin{align}
-            &\alpha_{K_{\alpha}} = \text{sin}^{-1}\left(\frac{hc}{2d \cdot 8038\cdot e }\right) \approx 23° \qquad \text{mit} \qquad \lambda = \frac{hc}{E} \\
-            &\alpha_{K_{\beta}}  = \text{sin}^{-1}\left(\frac{hc}{2d \cdot 8038\cdot e }\right) \approx 21°
+            &\alpha_{K_{\alpha}} = \text{sin}^{-1}\left(\frac{hc}{2d \cdot 8038\cdot eV }\right) \approx 23° \qquad \text{mit} \qquad \lambda = \frac{hc}{E} \\
+            &\alpha_{K_{\beta}}  = \text{sin}^{-1}\left(\frac{hc}{2d \cdot 8905\cdot eV }\right) \approx 21°
         \end{align}
 
         \noindent
-        Das experimentell gemessene Spektrum wird dargestellt, indem die Intensität gegen den Bragg-Winkel $\alpha$ aufgetragen werden. Die zugehörige 
-        Messreihe findet sich im Anhang (ref).
+        Das experimentell gemessene Spektrum wird dargestellt, indem die Impulsrate gegen den Bragg-Winkel $\alpha$ aufgetragen werden. Die zugehörige 
+        Messreihe findet sich im Anhang.
         
         \FloatBarrier
         \begin{figure}[h]
             \centering
-            \caption{In der Abbildung ist das Strahlungsspektrum der Kupfer-Röntgenröhre zu sehen. Die Impulsrate wird gegen den Bragg-Winkel aufgetragen, der in Verbindung zur Wellenlänge steht. Neben dem kontinuierlichen Bremspektrum, das über das gesamte Winkelintervall geht, sind auch die beiden charakteristischen Peaks bei 20,2° und 22,5° gut zu erkennen.}
+            \caption{In der Abbildung ist das Strahlungsspektrum der Kupfer-Röntgenröhre zu sehen. Die Impulsrate wird gegen den Bragg-Winkel aufgetragen, der in Verbindung zur Wellenlänge steht. Neben dem kontinuierlichen Bremspektrum , das über das gesamte Winkelintervall geht, sind auch die beiden charakteristischen Peaks $K_{\beta}$ bei 20,2° und $K_{\alpha}$ bei 22,5° gut zu erkennen.}
             \includegraphics[width = 0.9\linewidth]{Spektrum_Cu.pdf}
             \label{fig:Spektrum}
         \end{figure}
         \FloatBarrier
-
+        \noindent
         Über eine Scipy-Funktion wurden die Maxima der charakteristischen Strahlung wie folgt bestimmt.
 
         \begin{align}
@@ -253,7 +259,7 @@
         \subsection{Wellenlängenabhängigkeit der Transmission}
         \noindent
         Nun wird die Transmission des Aluminiumabsorbers gegen die Wellenlänge aufgetragen. Dazu müssen zum einen die Impulsraten $N_1$ und $N_0$ über die 
-        Totzeitkorrektur \ref{eqn:Totzeitkorrektur} in die Intensitäten und der Winkel über die umgestellte Bragg-Bedingung \ref{eqn:Bragglambda} in die 
+        Totzeitkorrektur \ref{eqn:Totzeitkorrektur} in die korrigierte Impulsrate und der Winkel über die umgestellte Bragg-Bedingung \ref{eqn:Bragglambda} in die 
         Wellenlänge umgerechnet werden. Zuletzt muss die Transmission aus dem Quotienten von  $I_1$ und $I_0$ berechnet werden.
 
         \begin{equation}
@@ -266,15 +272,21 @@
         \end{equation}
         
         \noindent
-        Die gemessenen und korrigierten Werte finden sich ebenfalls im Anhang (ref) und werden nun in einem Diagramm aufgetragen. Zudem wird eine 
+        Die gemessenen und korrigierten Werte finden sich im Anhang \ref{tab:Transmission} und werden nun in einem Diagramm aufgetragen. Zudem wird eine 
         Ausgleichgerade durch die Werte gelegt, die auf folgender Geradengleichung beruht:
 
-        \begin{align}
-            T\left(\lambda\right) &= m &\cdot \lambda &+ b\\
-            T\left(\lambda\right) &= -15 \cdot 10^{\left(-9\right)} \frac{W}{m³} &\cdot \lambda &+ 1,22 \frac{W}{m²}
+        \begin{equation}
+            T\left(\lambda \right) = m \cdot \lambda + b\\
             \label{eqn:Regression}
-        \end{align}
+        \end{equation}
 
+        \noindent
+        mit
+        \begin{align}
+            m &= (-1,519 \pm 0.024) \cdot 10^{(-10)} \frac{1}{m} \\
+            b &= 1.225 \pm 0.014
+            \label{eqn:Parameter}
+        \end{align}
         \FloatBarrier
         \begin{figure}[h]
             \centering
@@ -285,37 +297,58 @@
         \FloatBarrier
 
         \subsection{Bestimmung der Compton-Wellenlänge}
-        Mit den nun bereitstehenden Grundlagen wird die Compton-Wellenlänge bestimmt. Indem die Intensitäten von nicht gestreuten $I_{\text{ungestreut}}$ 
+        Mit den nun bereitstehenden Grundlagen wird die Compton-Wellenlänge bestimmt. Indem die Impulsraten von nicht gestreuten $I_{\text{ungestreut}}$ 
         und compton-gestreuten $I_{\text{gestreut}}$ Photonen über Formel \ref{eqn:Trans} in die entsprechende Transmission des Aluminiumabsorbers umgerechnet
-        werden. Dabei bezeichnet $I_{\text{norm}}$ die Intensität bei gleichem Streuwinkel ohne Aluminiumabsorber. 
+        werden. Dabei bezeichnet $I_{\text{norm}}$ die Impulsrate bei gleichem Streuwinkel ohne Aluminiumabsorber. 
+
+        \begin{align*}
+            I_{\text{norm}} = (2730 \pm 50) \, \text{Impulse}\\
+            I_{\text{ungestreut}} = (1180 \pm 34) \, \text{Impulse}\\
+            I_{\text{gestreut}} = (1024 \pm 32) \, \text{Impulse}
+        \end{align*}
         
         \begin{align}
-            T_{\text{ungestreut}} = \frac{I_{\text{ungestreut}}}{I_{\text{norm}}}=0,43\\
-            T_{\text{gestreut}} = \frac{I_{\text{gestreut}}}{I_{\text{norm}}}=0,37
+            T_{\text{ungestreut}} = \frac{I_{\text{ungestreut}}}{I_{\text{norm}}}=0,432 \pm 0,015\\
+            T_{\text{gestreut}} = \frac{I_{\text{gestreut}}}{I_{\text{norm}}}=0,375 \pm 0,014
             \label{eqn:T1T2}
         \end{align}
 
+        \noindent
         Die den Transmissionen zugehörigen Wellenlängen werden durch Umstellen von \ref{eqn:Regression} nach $\lambda$ und Einsetzen von $T_{\text{ungestreut}}$
         und $T_{\text{gestreut}}$ \ref{eqn:T1T2} ermittelt.
 
         \begin{align}
-            \lambda = \frac{T - 1,22}{-15} \, m \\
-            \lambda_{\text{ungestreut}} &= 52,2 \cdot 10^{\left(-12\right)} \, m \\
-            \lambda_{\text{gestreut}} &= 56,0 \cdot 10^{\left(-12\right)} \, m
+            \lambda &= \frac{T - 1,22}{-15\cdot 10^{\left(-9\right)}} \, m \\
+            \lambda_{\text{ungestreut}} &= (52,2 \pm 1,6) \cdot 10^{\left(-12\right)} \, m \\
+            \lambda_{\text{gestreut}} &= (55,9 \pm 0,16) \cdot 10^{\left(-12\right)} \, m
             \label{eqn:y1,y2}
         \end{align}
 
+        \noindent
         Da der Streuwinkkel bei dem Messaufbau 90° beträgt, entspricht die Compton-Wellenlänge $\lambda_{\text{C}}$ der Differenz von $\lambda_{\text{gestreut}}$
         und $\lambda_{\text{ungestreut}}$.
-        \begin{align}
-            \Delta \lambda &= \lambda_{\text{gestreut}} - \lambda_{\text{ungestreut}} =& \lambda_{\text{c}} \cdot \left(1 -cos (\theta)\right)\\
-            \lambda_{\text{c}} &= \lambda_{\text{gestreut}} - \lambda_{\text{ungestreut}} =& 3,8 \cdot 10^{\left(-12\right)} \, m \qquad \text{mit} \qquad \theta=90°
+        
+        \begin{equation}
+            \Delta \lambda = \lambda_{\text{gestreut}} - \lambda_{\text{ungestreut}} = \lambda_{\text{c}} \cdot \left(1 -cos (\theta)\right) \\
             \label{eqn:ycexp}
-        \end{align} 
+        \end{equation}
+
+        \begin{equation}
+            \lambda_{\text{c}} = \lambda_{\text{gestreut}} - \lambda_{\text{ungestreut}} = (3,8 \pm 1,1) \cdot 10^{\left(-12\right)} \, m \qquad \text{mit} \qquad \theta=90° \\
+            \label{eqn:ycwert}
+        \end{equation} 
 
 
 
     \section{Diskussion}
+        Zunächst ist die Aufnahme des Röntgenspektrums der Kupfer-Röntgenröhre als gelungen zu bezeichnen. Im Spektrum ist die kontinuierliche Bremsstrahlung 
+        klar neben den charakteristischen Peaks zu erkennen. Die Energien der gemessenen Peaks weichen zudem nur geringfügig von den Literaturwerten [2] ab, 
+        die $K_{\alpha}\text{-Energie}$ um 0,07 \% , die $K_{\beta}\text{-Energie}$ um 0,1 \%. Die anschließende Bestimmung der Compton-Wellenlänge ergibt
+        einen Wert, der um $(35 \pm 15)$\% von dem theoretisch berechneten Wert \ref{eqn:ComptonWellenlänge} abweicht. Diese Ungenauigkeit könnte auf eine
+        ungenaue Bestimmung der Transmission in Abhängigkeit von der Wellenlänge zurückgeführt werden. Jedoch wurde bei dieser Messung die Totzeitkorrektur
+        durchgeführt und es ergab sich auch ein deutlicher linearer Zusammenhang. Die Frage, ob bei der Messung zur Bestimmung der Compton-Wellenlänge eine
+        Totzeitkorrektur hätte durchgeführt werden müssen, kann mit nein beantwortet werden. Dies ist damit zu begründen, dass im gewählten Messbereich von 
+        7° bis 10° nur kleine Zählraten auftreten und die Totzeitkorrektur nur für hohe Zählraten notwendig ist \ref{Geiger}.
 
 
     \newpage
@@ -325,11 +358,11 @@
                 \url{http://www.phywe-ru.com/index.php/fuseaction/download/lrn_file/versuchsanleitungen/P2540101/d/p2540101d.pdf}
 
     \newpage
-    \section{Anhang}
+    
 
     \begin{table}[h]
         \centering
-        \caption{In der Tabelle sind zum einen die primären Messdaten wie der Bragg-Winkel und die zugehörigen Zählraten mit $N_1$ und ohne Aluminiumabsorber $N_2$. Zusätzlich sind auch die daraus berechneten Größen aufgelistet. Die Wellenlänge wird aus dem Bragg-Winkel berechnet \ref{eqn:Bragglambda}, die Intensitäten $I_0$ und $I_1$ aus den Impulsraten \ref{eqn:Totzeitkorrektur} und die Transmission T wiederum aus eben diesen Intensitäten \ref{eqn:Trans}.}
+        \caption{In der Tabelle sind zum einen die primären Messdaten wie der Bragg-Winkel und die zugehörigen Zählraten mit $N_1$ und ohne Aluminiumabsorber $N_2$. Zusätzlich sind auch die daraus berechneten Größen aufgelistet. Die Wellenlänge wird aus dem Bragg-Winkel berechnet \ref{eqn:Bragglambda}, die korrigierten Impulsraten $I_0$ und $I_1$ aus den Impulsraten \ref{eqn:Totzeitkorrektur} und die Transmission T wiederum aus eben diesen korrigierten Impulsraten \ref{eqn:Trans}.}
         \label{tab:Transmission}
 
         \begin{tabular}{c c c c c c c}
