@@ -81,7 +81,7 @@
         Impuls- und Energierhaltung nach Gleichung \ref{eqn:ComptonWellenlänge} berechnen.
 
         \begin{equation}
-            \Delta \lambda = \lambda_1 - \lambda_2 = \frac{h}{c \cdot m_e} \cdot \left(1-cos(\theta)\right) = \lambda_{\text{C}} \cdot \left(1-cos(\theta)\right)
+            \Delta \lambda = \lambda_1 - \lambda_2 = \frac{h}{c \cdot m_e} \cdot \left(1-\cos(\theta)\right) = \lambda_{\text{C}} \cdot \left(1-\cos(\theta)\right)
             \label{eqn:ComptonWellenlänge}
         \end{equation}
         \noindent
@@ -90,10 +90,10 @@
         Wellenlängendifferenz und somit die vom Photon abgegebene Energie vom Streuwinkel $\theta$ \ref{fig:SkizzeCompton} abhängt. Die Wellenlängendifferenz 
         wird für einen Streuwinkel von $\pi$, was einer Reflexion entspricht, maximal. Für einen gegen Null laufenden Streuwinkel geht auch die 
         Wellenlängendifferenz gegen Null und die Compton-Streuung tritt quasi nicht mehr auf.
-        \begin{align}
-            \Delta \lambda_{\text{max}} = 2 \cdot \lambda_{\text{C}} \qquad \text{bei} \theta = \pi \\
-            \Delta \lambda_{\text{min}} \longrightarrow 0 \qquad \text{für} \theta \longrightarrow 0
-        \end{align}
+        \begin{align*}
+            \Delta \lambda_{\text{max}} = 2 \cdot \lambda_{\text{C}} \qquad \text{bei} \qquad \theta = \pi \\
+            \Delta \lambda_{\text{min}} \longrightarrow 0 \qquad \text{für} \qquad \theta \longrightarrow 0
+        \end{align*}
         \noindent
 
         \FloatBarrier
@@ -106,8 +106,10 @@
         \FloatBarrier
         \noindent
 
-        Dieser Effekt kann für Photonen aller Energien beobachtet werden. Für hochenergetische Photonen, wie zum Beispiel Röntgen- oder $\gamma$ -Strahlung,
-        ist die Wahrscheinlichkeit den Effekt zu beobachten jedoch höher.  
+        Dieser Effekt kann bei freien Elektronen für Photonen aller Energien auftreten. Jedoch ist die Wellenlänge sichtbaren Lichts so viel größer
+        als die Compton-Wellenlänge (Faktor $10^5$), dass nach der Streuung quasi kein Wellenlängenunterschied zu messen wäre. Zudem tritt der Compton-Effekt
+        auch bei in Festkörpern befindlichen Elektronen statt, wenn die Photonenenergie ausreicht, um diese zu lösen. Dies ist bei Röntgen- oder $\gamma$-Strahlung
+        der Fall. Die Photonen des sichtbaren Spektrums haben dafür zu wenig Energie.
 
         \subsection{Röntgenstrahlung}
         Die für den Versuch verwendete Röntgenstrahlung wird in einer Röntgenröhre erzeugt. Dazu werden zunächst Elktronen über eine Heizspannung aus einem
@@ -132,7 +134,7 @@
         mit der Wellenlänge der einfallenden Röntgenstrahlung verknüpft ist. Die notwendige Gitterstruktur ist zum Beispiel in Kristallen gegeben.
 
         \begin{equation}
-            2 \cdot d \cdot sin(\alpha) = n \cdot \lambda = n \cdot \frac{hc}{E}
+            2 \cdot d \cdot \sin(\alpha) = n \cdot \lambda = n \cdot \frac{hc}{E}
             \label{eqn:Bragg}
         \end{equation}
 
@@ -251,9 +253,10 @@
         Zum Vergleich mit den Literaturenergien wird diese aus den ermittelten Winkel über die nach E umgestellte Formel \ref{eqn:Bragg} berechnet.
 
         \begin{align}
-            &E = \frac{hc}{2 \cdot d \cdot sin(\alpha)} \qquad \text{mit} \qquad d=201,4\cdot 10^{\left(-12\right)} \, m\\
+            &E = \frac{hc}{2 \cdot d \cdot \sin(\alpha)} \qquad \text{mit} \qquad d=201,4\cdot 10^{\left(-12\right)} \, m \nonumber\\
             &E_{K_{\alpha}} = 8043 \, eV \\
             &E_{K_{\beta}}  = 8914 \, eV
+            \label{eqn:EGraph}
         \end{align}
 
         \subsection{Wellenlängenabhängigkeit der Transmission}
@@ -263,7 +266,7 @@
         Wellenlänge umgerechnet werden. Zuletzt muss die Transmission aus dem Quotienten von  $I_1$ und $I_0$ berechnet werden.
 
         \begin{equation}
-            \lambda = 2dn \cdot sin(\alpha) \qquad \text{mit} \qquad d=201,4\cdot 10^{\left(-12\right)} \, m, \qquad n=1
+            \lambda = 2dn \cdot \sin(\alpha) \qquad \text{mit} \qquad d=201,4\cdot 10^{\left(-12\right)} \, m, \qquad n=1
             \label{eqn:Bragglambda}
         \end{equation}
         \begin{equation}
@@ -281,7 +284,7 @@
         \end{equation}
 
         \noindent
-        mit
+        mit folgenden Parametern, deren Abweichung der Covarianzmatrix der linearen Regression entspringt.
         \begin{align}
             m &= (-1,519 \pm 0.024) \cdot 10^{(-10)} \frac{1}{m} \\
             b &= 1.225 \pm 0.014
@@ -297,9 +300,14 @@
         \FloatBarrier
 
         \subsection{Bestimmung der Compton-Wellenlänge}
-        Mit den nun bereitstehenden Grundlagen wird die Compton-Wellenlänge bestimmt. Indem die Impulsraten von nicht gestreuten $I_{\text{ungestreut}}$ 
+        Mit den nun bereitstehenden Grundlagen wird die Compton-Wellenlänge bestimmt. Indem die Impulse von nicht gestreuten $I_{\text{ungestreut}}$ 
         und compton-gestreuten $I_{\text{gestreut}}$ Photonen über Formel \ref{eqn:Trans} in die entsprechende Transmission des Aluminiumabsorbers umgerechnet
-        werden. Dabei bezeichnet $I_{\text{norm}}$ die Impulsrate bei gleichem Streuwinkel ohne Aluminiumabsorber. 
+        werden. Dabei bezeichnet $I_{\text{norm}}$ die Impulse bei gleichem Streuwinkel ohne Aluminiumabsorber. Da die Anzahl der Impulse poisson-verteilt 
+        ist, kann der entsprechende Fehler über die Wurzel des Wertes berechnet werden.
+
+        \begin{equation*}
+            \Delta I = \sqrt{I}
+        \end{equation*}
 
         \begin{align*}
             I_{\text{norm}} = (2730 \pm 50) \, \text{Impulse}\\
@@ -308,19 +316,25 @@
         \end{align*}
         
         \begin{align}
-            T_{\text{ungestreut}} = \frac{I_{\text{ungestreut}}}{I_{\text{norm}}}=0,432 \pm 0,015\\
-            T_{\text{gestreut}} = \frac{I_{\text{gestreut}}}{I_{\text{norm}}}=0,375 \pm 0,014
+            T_{\text{ungestreut}} = \frac{I_{\text{ungestreut}}}{I_{\text{norm}}}=0,432 \pm 0,015 \nonumber\\
+            T_{\text{gestreut}} = \frac{I_{\text{gestreut}}}{I_{\text{norm}}}=0,375 \pm 0,014 
             \label{eqn:T1T2}
         \end{align}
 
         \noindent
+        Der zugehörige Fehler ergibt sich nach der Gauß'schen Fehlerfortpflanzung wie folgt:     
+        \begin{equation*}
+            \Delta T = \sqrt{\left( \frac{\Delta I}{I_{\text{norm}}}\right)^2 + \left(\frac{I \cdot \Delta I_{\text{norm}}}{I_{\text{norm}}^2}\right)^2}
+        \end{equation*}
+        \noindent
         Die den Transmissionen zugehörigen Wellenlängen werden durch Umstellen von \ref{eqn:Regression} nach $\lambda$ und Einsetzen von $T_{\text{ungestreut}}$
-        und $T_{\text{gestreut}}$ \ref{eqn:T1T2} ermittelt.
+        und $T_{\text{gestreut}}$ \ref{eqn:T1T2} ermittelt. Auch deren Fehler ergibt sich aus der Gauß'schen Fehlerfortpflanzung.
 
         \begin{align}
+            \Delta \lambda &= \sqrt{\left(\frac{\Delta T}{m}\right)^2 + \left(\frac{\Delta b}{m}\right)^2 + \left(-\frac{T-b}{m^2} \cdot \Delta m\right)^2} \nonumber \\
             \lambda &= \frac{T - 1,22}{-15\cdot 10^{\left(-9\right)}} \, m \\
-            \lambda_{\text{ungestreut}} &= (52,2 \pm 1,6) \cdot 10^{\left(-12\right)} \, m \\
-            \lambda_{\text{gestreut}} &= (55,9 \pm 0,16) \cdot 10^{\left(-12\right)} \, m
+            \lambda_{\text{ungestreut}} &= (52,2 \pm 1,6) \cdot 10^{\left(-12\right)} \, m \nonumber \\
+            \lambda_{\text{gestreut}} &= (55,9 \pm 1,6) \cdot 10^{\left(-12\right)} \, m \nonumber
             \label{eqn:y1,y2}
         \end{align}
 
@@ -328,10 +342,10 @@
         Da der Streuwinkkel bei dem Messaufbau 90° beträgt, entspricht die Compton-Wellenlänge $\lambda_{\text{C}}$ der Differenz von $\lambda_{\text{gestreut}}$
         und $\lambda_{\text{ungestreut}}$.
         
-        \begin{equation}
-            \Delta \lambda = \lambda_{\text{gestreut}} - \lambda_{\text{ungestreut}} = \lambda_{\text{c}} \cdot \left(1 -cos (\theta)\right) \\
+        \begin{equation*}
+            \Delta \lambda = \lambda_{\text{gestreut}} - \lambda_{\text{ungestreut}} = \lambda_{\text{c}} \cdot \left(1 -\cos (\theta)\right) \\
             \label{eqn:ycexp}
-        \end{equation}
+        \end{equation*}
 
         \begin{equation}
             \lambda_{\text{c}} = \lambda_{\text{gestreut}} - \lambda_{\text{ungestreut}} = (3,8 \pm 1,1) \cdot 10^{\left(-12\right)} \, m \qquad \text{mit} \qquad \theta=90° \\
@@ -342,13 +356,15 @@
 
     \section{Diskussion}
         Zunächst ist die Aufnahme des Röntgenspektrums der Kupfer-Röntgenröhre als gelungen zu bezeichnen. Im Spektrum ist die kontinuierliche Bremsstrahlung 
-        klar neben den charakteristischen Peaks zu erkennen. Die Energien der gemessenen Peaks weichen zudem nur geringfügig von den Literaturwerten [2] ab, 
+        klar neben den charakteristischen Peaks zu erkennen. Die Energien der gemessenen Peaks \ref{eqn:EGraph} weichen zudem nur geringfügig von den Literaturwerten [2] ab, 
         die $K_{\alpha}\text{-Energie}$ um 0,07 \% , die $K_{\beta}\text{-Energie}$ um 0,1 \%. Die anschließende Bestimmung der Compton-Wellenlänge ergibt
-        einen Wert, der um $(35 \pm 15)$\% von dem theoretisch berechneten Wert \ref{eqn:ComptonWellenlänge} abweicht. Diese Ungenauigkeit könnte auf eine
+        eine Wellenlänge \ref{eqn:ycwert}, die um $(35 \pm 15)$\% von dem theoretisch berechneten Wert \ref{eqn:ComptonWellenlänge} abweicht. Diese Ungenauigkeit könnte auf eine
         ungenaue Bestimmung der Transmission in Abhängigkeit von der Wellenlänge zurückgeführt werden. Jedoch wurde bei dieser Messung die Totzeitkorrektur
         durchgeführt und es ergab sich auch ein deutlicher linearer Zusammenhang. Die Frage, ob bei der Messung zur Bestimmung der Compton-Wellenlänge eine
         Totzeitkorrektur hätte durchgeführt werden müssen, kann mit nein beantwortet werden. Dies ist damit zu begründen, dass im gewählten Messbereich von 
-        7° bis 10° nur kleine Zählraten auftreten und die Totzeitkorrektur nur für hohe Zählraten notwendig ist \ref{Geiger}.
+        7° bis 10° nur kleine Zählraten auftreten und die Totzeitkorrektur nur für hohe Zählraten notwendig ist \ref{Geiger}. Letztendlich ist der Fehler 
+        vermutlich darauf zurückzuführen, dass die hochenergetische Röntgenstrahlung auch am Aluminiumabsorber compton streut und dabei womöglich Photonen
+        in das Geiger-Müller-Zählrohr gestreut werden.
 
 
     \newpage
@@ -367,7 +383,7 @@
 
         \begin{tabular}{c c c c c c c}
             \toprule
-            {Bragg-Winkel [°]}  & {Wellenlänge [pm]} & {$N_0$ [Imp/s]} & {$I_0$ [W/m²]} & {$N_1$ [Imp/s]} & {$I_1$ [W/m²]} & {T} \\ 
+            {Bragg-Winkel [°]}  & {Wellenlänge [pm]} & {$N_0$ [Imp/s]} & {$I_0$ [Imp/s]} & {$N_1$ [Imp/s]} & {$I_1$ [Imp/s]} & {T} \\ 
             \midrule
             7.0	                &  49,1              &  226.0          &    230,7       &    113,5        &    114,7       &  0,50 \\
             7.1	                &  49,8              &  232.0          &    237,0       &    112,0        &    113,1       &  0,48 \\

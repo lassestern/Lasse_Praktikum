@@ -41,10 +41,13 @@ lambda_kbeta = (const.h * const.c)/(8905*const.e)
 
 
 #Plot Bremsspektrum Kupfer
-plt.plot(theta_Cu, rate_Cu, "-", label=r'Gesamtspektrum')
+plt.plot(theta_Cu, rate_Cu, "kx")
+plt.plot(theta_Cu, rate_Cu, "-", label=r'Bremsspektrum')
+plt.plot(theta_Cu[120:128], rate_Cu[120:128], "r-", label=r'$K_{\beta}$')
+plt.plot(theta_Cu[142:151], rate_Cu[142:151], "-", label=r'$K_{\alpha}$')
 plt.xlabel(r'Bragg-Winkel [°]')
-plt.plot((20.2, 20.2), (0, 1599), 'r-', label=r'$K_{\beta}$')
-plt.plot((22.5, 22.5), (0, 5050), 'g-', label=r'$K_{\alpha}$')
+#plt.plot((20.2, 20.2), (0, 1599), 'r-', label=r'$K_{\beta}$')
+#plt.plot((22.5, 22.5), (0, 5050), 'g-', label=r'$K_{\alpha}$')
 plt.ylabel(r'Impulsrate [Impulse/Sekunde]')
 plt.legend(loc = 'best')
 plt.savefig('Spektrum_Cu.pdf')
