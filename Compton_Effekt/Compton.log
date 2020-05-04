@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  4 MAY 2020 11:31
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  4 MAY 2020 15:15
  restricted system commands enabled.
 **Compton.tex
 (./Compton.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.122 seconds
+luaotfload | main : initialization completed in 0.112 seconds
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1540,42 +1540,47 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.99425pt too wide) in paragraph at lines 372--375
+Overfull \hbox (1.99425pt too wide) in paragraph at lines 372--377
 \TU/lmr/m/n/10.95 03.Mai.2020 []$\TU/lmtt/m/n/10.95 http://www.phywe-[]ru.com/i
 ndex.php/fuseaction/download/lrn_file/
  []
 
 [14]
-Overfull \hbox (48.28476pt too wide) in paragraph at lines 384--422
+Overfull \hbox (48.28476pt too wide) in paragraph at lines 386--424
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 427.
 [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
  (./Compton.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
-Package rerunfilecheck Info: File `Compton.aux' has not changed.
-(rerunfilecheck)             Checksum: D707C6F0D7A82155984E7ABAD17CBDF5;13995.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 427.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 427.
+
+
+Package rerunfilecheck Warning: File `Compton.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `Compton.aux':
+(rerunfilecheck)             Before: 3ECE41BDE72743D0E94344F9521555EF;13868
+(rerunfilecheck)             After:  D707C6F0D7A82155984E7ABAD17CBDF5;13995.
 Package rerunfilecheck Info: File `Compton.toc' has not changed.
 (rerunfilecheck)             Checksum: E206F6232D3F75456543EBB0244B6BB4;1413.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 427.
 )
 
 Here is how much of LuaTeX's memory you used:
  33234 strings out of 494291
  195338,1144653 words of node,token memory allocated
- 125125 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 16013 glyph, 5466 attrib
+ 125958 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 16132 glyph, 5466 attrib
 ute, 65 glue_spec, 783 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:6,2:2538,3:120,4:49,5:198,6:32,7:2780,8:109,9:331,10:26,11:451
+   avail lists: 1:6,2:2538,3:120,4:50,5:195,6:33,7:2780,8:109,9:331,10:26,11:451
 
  36565 multiletter control sequences out of 65536+600000
- 92 fonts using 36063047 bytes
+ 92 fonts using 36063503 bytes
  54i,13n,109p,9117b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/l
@@ -1588,7 +1593,7 @@ e/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regula
 r.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmrom
 an12-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/publ
 ic/lm/lmsans10-bold.otf>
-Output written on Compton.pdf (15 pages, 127766 bytes).
+Output written on Compton.pdf (15 pages, 128617 bytes).
 
 PDF statistics: 398 PDF objects out of 1000 (max. 8388607)
  268 compressed objects within 3 object streams

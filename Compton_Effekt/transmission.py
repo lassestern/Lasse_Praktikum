@@ -142,8 +142,11 @@ print("Lambda 1, Lambda 2")
 print(lambda1, lambda2)
 print('Compton-Wellenlänge (experimentell):')
 print(lambda2-lambda1)
+print(const.physical_constants["Compton wavelength"])
 print('Abweichung Compton-Wellenlänge:')
-print(100*(1-lambda_c/(lambda2-lambda1)))
+Vergleich = unp.uarray(2.4263102367*10**(-12), 1.1*10**(-21))
+Abweichung = 1 - (lambda2-lambda1)/Vergleich
+print(Abweichung)
 
 
 
