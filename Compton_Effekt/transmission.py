@@ -11,12 +11,12 @@ theta_norm, rate_norm = np.genfromtxt('ComptonOhne.txt', unpack = True) #U=35kV,
 theta_Cu, rate_Cu = np.genfromtxt('EmissionCu.dat', unpack = True) #Intzeit/Winkel 10s, UBeschl = 35kV, I=1mA, LiF-Kristall, Theta(°) und Rate in (Imp/s)
 
 
-
+theta_Al_u = unp.uarray(theta_Al, 0.1)
 
 
 
 def lam(theta):
-    return (2*201.4*10**(-12)*np.sin(theta*2*np.pi/360))
+    return (2*201.4*10**(-12)*unp.sin(theta*2*np.pi/360))
 
 def Transmission(I, I_0):
     return I/I_0
@@ -37,7 +37,7 @@ lambda_kbeta = (const.h * const.c)/(8905*const.e)
 #print(lambda_kalpha)
 #print("K-Beta:")
 #print(bragg_kbeta)
-#print(lambda_kbeta)
+print(lambda_kbeta)
 
 
 #Plot Bremsspektrum Kupfer
@@ -60,8 +60,10 @@ print("K-AlBeta und K-Alpha Peak:")
 print(peaks)
 print(theta_Cu[122], theta_Cu[145])
 #Energien der Peaks
-E_beta = const.h * const.c /(2*201.4*10**(-12)*np.sin(theta_Cu[122]*2*np.pi/360))/const.e
-E_alpha  = const.h * const.c /(2*201.4*10**(-12)*np.sin(theta_Cu[145]*2*np.pi/360))/const.e
+theta_beta = unp.uarray(theta_Cu[122], 0.1)
+theta_alpha = unp.uarray(theta_Cu[145], 0.1)
+E_beta = const.h * const.c /(2*201.4*10**(-12)*unp.sin(theta_beta*2*np.pi/360))/const.e
+E_alpha  = const.h * const.c /(2*201.4*10**(-12)*unp.sin(theta_alpha*2*np.pi/360))/const.e
 print("Energien der Peaks (Literatur): 8905eV, 8038eV")
 print("Energien der Peaks (Experiment):")
 print(E_beta, E_alpha)
@@ -97,7 +99,7 @@ print(T_1, T_2)
 
 #Plot ComptonAlu
 
-lambda_Alu = lam(theta_Al)
+lambda_Alu = lam(theta_Al_u)
 
 #print("Wellenlänge Alu:")
 #print(lambda_Alu)
@@ -110,7 +112,7 @@ lambda_Alu = lam(theta_Al)
 
 
 #Ausgleichsgerade
-params, cov_matrix = np.polyfit(lambda_Alu, noms(T), deg=1, cov = True)
+params, cov_matrix = np.polyfit(noms(lambda_Alu), noms(T), deg=1, cov = True)
 x=np.linspace(4.8*10**(-11), 7*10**(-11),1000000)
 T_fit = x * params[0] + params[1]
 errors = np.sqrt(np.diag(cov_matrix))
@@ -120,7 +122,7 @@ print("Fehler")
 print(errors)
 #print(T)
 
-plt.plot(lambda_Alu,noms(T), "x", label=r'Al bei 35kV')
+plt.plot(noms(lambda_Alu),noms(T), "x", label=r'Al bei 35kV')
 plt.plot(x, x*params[0]+params[1], "r-", label=r'Ausgleichsgerade')
 plt.xlabel(r'Wellenlänge [m]')
 plt.ylabel(r'Transmission')
