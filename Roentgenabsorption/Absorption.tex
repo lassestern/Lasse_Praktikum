@@ -66,7 +66,7 @@
 
 
     \section{Theoretische Grundlagen}
-        \subsection{Röntgenstrahlung}
+        \subsection{Röntgenstrahlung} \label{Röntgen}
             Das Röntgenspektrum besteht immer aus einem kontinuierlichem Bremsspektrum und einer Mehrzahl an charakteristischen Strahlungspeaks, die sich mit dem Bremsspektrum überlagern.
             Dieses Spektrum kann mit einer Röntgenröhre erzeugt werden. Sie besteht aus einer Glühkathode, aus der Elektronen über eine Heizspannung ausgelöst werden. Zwischen der Glühkathode und einer
             gegenüber befestigten Anode liegt eine Beschleunigungsspannung an, sodass das resultierende elektrische Feld die Elektronen auf die Anode zubeschleunigt. Die beim Auftreffen auf die Anode 
@@ -76,7 +76,7 @@
 
             \begin{figure}[h]
               \centering
-              \includegraphics{Brems.png}
+              \includegraphics[width = 0.6\textwidth]{Brems.png}
               \caption{In der Abbildung ist ein Bremsspektrum schematisch skizziert. Die kleinste Wellenlänge $\lambda$ entspricht der Energie der schnellsten Elektronen. [1]}
               \label{fig:SkizzeBrems}
             \end{figure}
@@ -107,9 +107,9 @@
                 
                 \noindent
                 Die aus der Potentialdifferenz frei werdende Energie hängt dabei von den Schalen ab aus der das Elektron herausgelöst und aus der das neue Elektron hinabsteigt. Die Schalenenergien 
-                werden in Formel \ref{eqn:char} durch die Indizes "n" und "m" differenziert. Die verschiedenen charakteristischen Peaks ergeben sich daraus, dass der beschriebene Prozess zwischen
+                werden in Formel \ref{eqn:char} durch die Indizes n und m differenziert. Die verschiedenen charakteristischen Peaks ergeben sich daraus, dass der beschriebene Prozess zwischen
                 allen Schalen ($K, L, M$) auftreten kann. So werden die Peaks bezüglich der Schale mit der freien Elektronstelle, der Großbuchstabe, und der Schale aus der das neue Elektron kommt,
-                der griechische Indize, bezeichnet. Wenn ein Elektron aus der L-Schale, um eine Schale auf die K-Schale fällt, wird der zueghörige Peak als $K_{\alpha}$ bezeichnet. Bei einem Sprung
+                der griechische Indize, bezeichnet. Wenn ein Elektron aus der L-Schale, um eine Schale auf die K-Schale fällt, wird der zugehörige Peak als $K_{\alpha}$ bezeichnet. Bei einem Sprung
                 um zwei Schalen lautet der Indize $\beta$ und bei drei Schalen $\gamma$. Um aus Formel \ref{eqn:char} die Energie eines Sprunges zu berechnen wird die potentielle Energie in den
                 Schalen wie folgt berechnet:
 
@@ -187,7 +187,7 @@
 
             \begin{figure}[h]
               \centering
-              \includegraphics{Kanten.png}
+              \includegraphics[width = 0.5\textwidth]{Kanten.png}
               \caption{In der Abbildung ist ein Absorptionsspektrum dargestellt. Die Sprünge an den Absorptionskanten der L- und K-Schale sind deutlich zu erkennen.[1]}
               \label{fig:SkizzeBragg}
             \end{figure}
@@ -200,8 +200,8 @@
             Bei der Bragg-Reflexion fällt Strahlung auf ein Material mit einer Oberflächengitterstruktur. Wenn Strahlung einer gewissen Wellenlänge auf diese Gitterstruktur auftrifft, wird sie 
             an einem Atom in der Gitterstruktur gebeugt und interferiert daraufhin mit sich selbst. Dabei kommt es beim Bragg-Winkel $\theta$ zu konstruktiver Interferenz. Der Bragg-Winkel hängt
             neben der Wellenlänge der einfallenden Strahlung auch von der Gitterkonstante des Materials $d$ und der Anzahl der Schichten an denen das Licht gebeugt wird $n$ ab. Er lässt sich
-            durch Umstellen von Formel berechnen. Da der Bragg-Winkel von der Wellenlänge abhängt, kann man bei konstantem Material Da sie die maximale Inensität beiDa sie die maximale Inensität beibei verschiedenen Winkeln verschiedene Wellenlängen eines 
-            einfallenden Spektrums beobachten.
+            durch Umstellen von Formel \ref{eqn:Bragg} berechnen. Da der Bragg-Winkel von der Wellenlänge abhängt, kann bei gleichem Material die maximale Intensität bei verschiedenen 
+            Winkeln verschiedener Wellenlängen eines einfallenden Spektrums beobachtet werden.
 
             \begin{equation}
               2d\sin(\theta) = n\lambda \qquad \longrightarrow \qquad \theta = \arcsin(\frac{n\lambda}{2d})
@@ -220,21 +220,21 @@
 
             \begin{figure}[h]
               \centering
-              \includegraphics{skizzebragg.png}
+              \includegraphics[width = 0.5\textwidth]{skizzebragg.png}
               \caption{In der Abbildung ist die Bragg-Reflexion skizziert. Der Winkel $\theta$ ist der Bragg-Winkel und d die Gitterkonstante.[1]}
               \label{fig:SkizzeBragg}
             \end{figure}
 
             \FloatBarrier
 
-
+    \newpage
     \section{Durchführung}
 
     \FloatBarrier
 
     \begin{figure}[h]
       \centering
-      \includegraphics{Aufbau.png}
+      \includegraphics[width = 0.8\textwidth]{Aufbau.png}
       \caption{In der Abbildung ist der Gesamtaufbau des Versuches abgebildet. Die einzelnen Komponenten werden zudem benannt.[1]}
       \label{fig:Aufbau}
     \end{figure}
@@ -243,14 +243,14 @@
 
             
         \subsection{Röntgenstrahlung}
-          Um den Versuch durchführen zu können wird zunächst Röntgenstrahlung erzeugt. Dies geschieht wie in Abschnitt (ref) beschrieben in einer Röntgenröhre, die die Elektronen bei einem Emissionsstrom
+          Um den Versuch durchführen zu können wird zunächst Röntgenstrahlung erzeugt. Dies geschieht wie in Abschnitt \ref{Röntgen} beschrieben in einer Röntgenröhre, die die Elektronen bei einem Emissionsstrom
           von 1mA und einer Beschleunigungsspannung 35kV auf eine Kupferanode beschleunigt. 
 
         \subsection{Bragg-Bedingung}
           Zunächst soll die Bragg-Bedingung, die eine Aussage über den Winkel des Intensitätsmaximum der reflektieren Strahlung trifft, überprüft werden. Dafür wird ein LiF-Kristall in einem 
           Bragg-Winkel $\theta$ von 14° in den Röntgenstrahl gestellt. Das Intensitätmaxium der reflektierten Röntgenstrahlung wird ebenfalls beim Bragg-Winkel relativ zum LiF-Kristall erwartet. 
           Das Intensitätmaxium wird demnach beim doppelten Winkel $2\theta$ zum Strahl erwartet und daher ein Messbereich von 26° bis 30° gewählt. Ein Geiger-Müller-Zählrohr misst
-          für diesen Bereich die Intensität der reflektieren Strahlung in 0,1°-Schritten und über eine Integrationszeit von 5 Sekunden.
+          für diesen Bereich die Intensität der reflektierten Strahlung in 0,1°-Schritten und über eine Integrationszeit von 5 Sekunden.
 
         \subsection{Röntgenspektrum}
           Um das Röntgenspektrum der Röntgenröhre mit Kupferanode zu analysieren, wird die Bragg-Bedingung verwendet. Das Geiger-Müller-Zählrohr misst dazu in einem Winkelbereich von 4° bis 26°, was
@@ -261,14 +261,14 @@
 
         \subsection{Absorptionsspektren}
           Zur Messung von Absorptionsspektren muss zunächst ein Absorber zwischen LiF-Kristall und Geiger-Müller-Zählrohr platziert werden. Nun wird der Winkel des Geiger-Müller-Zählrohrs in 
-          0,1°-Schritten über einen für das Material geeigneten Bereich varriert und dabei das Absorptionsspektrum gemessen. Es werden füt Zink, Gallium, Brom, Rubidium, Strontium und Zirkonium
+          0,1°-Schritten über einen für das Material geeigneten Bereich varriert und dabei das Absorptionsspektrum gemessen. Es werden für Zink, Gallium, Brom, Rubidium, Strontium und Zirkonium
           die zugehörigen Absorptionsspektren gemessen.
           
 
     
     \section{Auswertung}
         
-        Für weitere Rechnungen werden zunächst Elemtareigenschaften aus der Literatur gesucht und berechnet. Die $\sigma_k$s werden dabei aus $E_k^{\text{Lit}}$, der Rydbergenergie $R_{\infty}$, der 
+        Für weitere Rechnungen werden zunächst Elemtareigenschaften aus der Literatur gesucht und berechnet. Die $\sigma_k$ werden dabei aus $E_k^{\text{Lit}}$, der Rydbergenergie $R_{\infty}$, der 
         Ordnungszahl Z und der Sommerfeldschen Feinstrukturkonstante $\alpha$ über Formel \ref{eqn:sigmak} berechnet, die Winkel $\theta_k^{\text{Lit}}$ aus $E_k^{\text{Lit}}$ und der Gitterkonstante d, nach
         Umstellen von Gleichung \ref{eqn:Energie} nach $\theta$ bei n=1.
         
@@ -281,7 +281,7 @@
         \FloatBarrier
         \begin{table}[h]
           \centering
-          \caption{In der Tabelle sind Literaturwerte von Eigenschaften der im Experiment verwendeten Elemente dragestellt. Sie werden teils auseinander errechnet.}
+          \caption{In der Tabelle sind Literaturwerte von Eigenschaften der im Experiment verwendeten Elemente dargestellt. Sie werden teils auseinander errechnet.}
           \label{tab:Elemente}
         
           \begin{tabular}{c c c c c}
@@ -314,20 +314,27 @@
             \FloatBarrier  
 
             \noindent
-            Die Auswertung der in Grafik \ref{fig:graphbragg} dargestellten Messwerte über die Scipy-Funktion findPeaks liefert das Intensitätsmaximum bei einem Winkel von $(28,2 \pm 0,1)°$. 
+            Die Auswertung der in Grafik \ref{fig:bragggraph} dargestellten Messwerte über die Scipy-Funktion findPeaks liefert das Intensitätsmaximum bei einem Winkel von $(28,2 \pm 0,1)°$. 
 
 
         \subsection{Emissionspektrum}
-            Zunächst werden die gesamten Messdaten der Messung zur Intensität in Abhängigkeit vom Bragg-Winkel in einer Grafik
+            Zunächst werden die gesamten Messdaten der Messung zur Intensität in Abhängigkeit vom Bragg-Winkel in einer Grafik aufgetragen.
             \FloatBarrier
             \begin{figure}[h]
               \centering
-              \caption{In dem Graphen ist der gesamte Bereich des aufgenommen Röntgenspektrums der Kupferröntgenröhre, in Form der Impulsrate in Imp/s in Abhängigkeit vom Bragg-Winkel aufgetragen. Neben dem kontinuierlichen Bremsspektrum sind auch die $K_{\alpha}-$ und $K_{\beta}-$ Peaks deutlich zu erkennen.}
               \includegraphics{Spektrum_Cu.pdf}
+              \caption{In dem Graphen ist der gesamte Bereich des aufgenommen Röntgenspektrums der Kupferröntgenröhre, in Form der Impulsrate in Imp/s in Abhängigkeit vom Bragg-Winkel aufgetragen. Neben dem kontinuierlichen Bremsspektrum sind auch die $K_{\alpha}-$ und $K_{\beta}-$ Peaks deutlich zu erkennen.}
               \label{fig:spektrum}
             \end{figure}
             \FloatBarrier
             \noindent
+            Aus diesem Spektrum ist weder die maximale noch die minimale Energie des Spektrums zu bestimmen. Die maximale Energie liegt nach folgender Formel,
+            \begin{equation*}
+              \theta_{\text{min}} = \arcsin\left(\frac{hc}{2 \cdot d \cdot U_{\text{Beschl}}e} \right) \approx 5,05°
+            \end{equation*}
+            \noindent
+            bei einem Winkel der nicht im aufgenommenen Spektrum liegt. Die minimale Energie liegt bei dem maximalen Winkel. Da das Bremsspektrum kontinuierlich gegen Null läuft, liegt auch dieser Winkel
+            nicht im aufgenommenen Bereich.
             Zur genaueren Betrachtung der charakteristischen Strahlung wird zudem ein Detailspektrum der $K_{\alpha}-$ und $K_{\beta}-$ Peaks angefertigt. In diesem Detailspektrum wird der durch die 
             Bremstrahlung erzeugte Untegrund über folgende Geradengleichung abgezogen.
 
@@ -365,7 +372,7 @@
             über Formel \ref{eqn:Energie}, bei n=1, und deren Fehler über folgende Formel berechnet wird:
 
             \begin{equation*}
-              \Delta E = \frac{hcn}{2d} \cdot \frac{2 \cdot \cos(\theta)}{\cos(2\theta)-1}
+              \Delta E = \frac{hcn}{2d} \cdot \frac{2 \cdot \cos(\theta)}{\cos(2\theta)-1} \cdot \Delta \theta
             \end{equation*}
             
             \begin{equation}
@@ -374,7 +381,7 @@
             \end{equation}
             
             \noindent
-            werden die Auflösungen der Peaks berechnet:
+            werden die Auflösungen der Peaks berechnet, die bei dem verwendeten Material eine genügende Genauigkeit aufweisen, sodass kein statistischer Fehler betrachtet werden muss.
 
             \begin{equation}
               \text{Auflösung} = \frac{E_{\text{Peak}}}{\Delta E_{\text{Peak}}} \qquad \longrightarrow \qquad \text{Auflösung}_{\beta} = 42,55 \pm 0,20 , \qquad \text{Auflösung}_{\alpha} = 47,85 \pm 0,20
@@ -430,8 +437,8 @@
                 {Material}  & {$I_{\text{K}}^{\text{min}}$ [Imp/s]} & {$I_{\text{K}}^{\text{max}}$ [Imp/s]} & {$I_{\text{K}}$ [Imp/s]} & {$\theta$ [°]} & {$E_{\text{K}} \text{[eV]}$} & {$\sigma_k$} \\ 
                 \midrule
                 Zn	                &  54              & 102           &    78       &    18,7 $\pm$ 0,1  &   9600 $\pm$ 50   &   3,64 $\pm$ 0,07   \\
-                Ga	                &  66              &  122          &    94       &   17,3  $\pm$ 0,1  &   10350$\pm$ 60   &   3,64 $\pm$ 0,08    \\
-                Br	                &  9               &  27           &    18       &   13,2  $\pm$ 0,1  &   13480$\pm$ 100  &   3,84 $\pm$ 0,12  \\
+                Ga	                &  66              &  122          &    94       &   17,3  $\pm$ 0,1  &   10350$\pm$ 60   &   3,64 $\pm$ 0,08   \\
+                Br	                &  9               &  27           &    18       &   13,2  $\pm$ 0,1  &   13480$\pm$ 100  &   3,84 $\pm$ 0,12   \\
                 Rb	                &  12              &  64           &    38       &   11,8  $\pm$ 0,1  &   15050$\pm$ 130  &   4,12 $\pm$ 0,14   \\
                 Sr	                &  40              &  196          &    118      &    11,1 $\pm$ 0,1  &   15990$\pm$ 140  &   4,13 $\pm$ 0,15   \\
                 Zr	                &  112             &  301          &    206,5    &    10   $\pm$ 0,1  &   17730$\pm$ 180  &   4,38 $\pm$ 0,18   \\
@@ -440,20 +447,27 @@
             \end{table}
             \FloatBarrier
             \noindent
-            Zuletzt wird die Rydbergenergie $R_{\text{inf}}$ mit Hilfe des  Moseley´schen Gesetz bestimmt. Diese besagt, dass die Wurzel der K-Kantenenergie der Elemente gegen die effektive 
+            Zuletzt wird die Rydbergenergie $R_{\infty}$ mit Hilfe des  Moseley´schen Gesetz bestimmt. Diese besagt, dass die Wurzel der K-Kantenenergie der Elemente gegen die effektive 
             Kernladungszahl des Elements eine Gerade ergeben, deren Steigung die Wurzel der Rydbergenergie ergibt. Dazu werden eben diese Werte per Matplotlib in Grafik \ref{fig:Moseley} 
             aufgetragen und mit der Funktion Curvefit eine lineare Regression angefertigt, die folgende Parameter hat:
 
             \begin{align*}
               y &= mx + b \\
-              m &= (1518,91 \pm 2,03) \cdot 10^{-12} \qquad b = (-831,75 \pm 63,60) \cdot 10^{-12} \\
+              m &= (1518,91 \pm 2,03) \cdot 10^{-12} \, \sqrt{\text{J}}  \qquad b = (-831,75 \pm 63,60) \cdot 10^{-12} \, \sqrt{\text{J}}\\
             \end{align*}
 
             \noindent
-            Aus der Steigung $m$ wird dann die Rydbergenergie $R_{\text{inf}}$ bestimmt:
+            Aus der Steigung $m$ wird dann die Rydbergenergie $R_{\infty}$ bestimmt:
 
             \begin{equation*}
-              R_{\text{inf}} = m^2 = (14,40 \pm 0,04) \, \text{eV}
+              R_{\infty} = m^2 = (14,40 \pm 0,04) \, \text{eV} \qquad \text{mit} \qquad \Delta R_{\infty} = 2m \cdot \Delta m
+            \end{equation*}
+
+            \noindent
+            Daraus kann wiefolgt die Rydbergkonstante und der zugehörige Fehler berechnet werden.
+
+            \begin{equation*}
+              R = \frac{R_{\infty}}{hc} = (1,164 \pm 0,0031) \cdot 10^{7} \, \frac{1}{\text{m}} \qquad \text{mit} \qquad \Delta R = \frac{1}{hc} \cdot \Delta R_{\infty}
             \end{equation*}
             
             \FloatBarrier
@@ -468,7 +482,10 @@
 
           \section{Diskussion}
             Die zunächst durchgeführte Überprüfung der Bragg-Bedingung hat einen Winkel ergeben, der um 0,2° vom Literaturwert abweicht. Die kleine Abweichung lässt sich womöglich durch Unebenheiten
-            in der kristallinen Struktur erklären. Dennoch ist der Wert aussagekräftig genug, um die Theorie zur Lage des Intensitätmaxium bei der Bragg-Reflexion zu bestätigen. Die Literaturenergien 
+            in der Oberfläche des Streuers zu erklären. Dennoch ist der Wert aussagekräftig genug, um die Theorie zur Lage des Intensitätmaxium bei der Bragg-Reflexion zu bestätigen. Wenn dieses
+            Intensitätsmaximum um eine Winkel verschoben ist, ändert sich auch das später gemessene Cu-Spektrum. Das Spektrum verschiebt sich einfach um einen Winkel, wenn das Geiger-Müller-Zählrohr
+            korrekt geeicht ist und der Fehler in der Orientierung des Streuers liegt. Wenn jedoch die Orientierung des Streuers korrekt ist und das Geiger-Müller-Zählrohr nicht beim doppelten
+            Bragg-Winkel, sondern etwas davon abgewichen misst, misst er nicht das Intensitätmaxium, sondern immer etwas weniger, sodass die Intensität über das ganze Spektrum verringert gemessen wird.
             der Peaks des charakteristischen Spektrums liegen beide im $1\sigma$-Bereich der Messwerte. Dementsprechend decken sich diese Messwerte mit der Theorie. Auch die Literaturwerte der 
             Abschirmkonstanten $\sigma_1, \sigma_2$ und $\sigma_3$ liegen im $1\sigma$-Bereich der Messwerte, sodass die Messwerte ein gutes Bild der Theorie abbilden.
             Daraufhin wurden die Absorptionskantenenergien der Materialien Zink, Gallium, Brom, Rubidium, Strontium und Zirkonium bestimmt. Während die Energien von Zink, Gallium, Brom und Strontium
@@ -477,8 +494,9 @@
             den zuvor bestimmten Absorptionskantenenergien berechnet werden, deckt sich das beobachtete Fehlerbild mit dem der Energien. Die Literaturwerte von Zink, Gallium, Brom und Strontium
             liegen wieder im $1\sigma$-Bereich der Messwerte und die Literaturwerte von Rubidium und Zirkonium wieder knapp außerhalb. Die Abschirmkonstante von Zirkonium liegt am weitesten vom 
             Literaturwert entfernt und ist nur schwer durch diesen zu bestätigen. Die anderen Abschirmkonstanten decken sich alle gute mit den zugehörigen Literaturwerten. Der $1\sigma$-Bereich 
-            des zuletzt bestimmten Wert der Rydbergenergie $\text{R}_{\infty}$ enthält nicht den LIteraturwert. Dennoch ist die Messung als erfolgreich zu beschreiben, da der Experimentalwert um
-            5,8 \% vom Literaturwert abweicht und so eine gegnügende Genauigkeit besitzt. 
+            des zuletzt bestimmten Wert der Rydbergenergie $\text{R}_{\infty}$ enthält nicht den Literaturwert. Dennoch ist die Messung als erfolgreich zu beschreiben, da der Experimentalwert um
+            5,8 \% vom Literaturwert abweicht und so eine gegnügende Genauigkeit besitzt. Der vorhandene Fehler könnte auf Unregelmäßigkeiten in der Dicke der eingesetzten Absorberplatten für 
+            die einzelnen Materialien, wenn die Platten zum Beispiel keine homogene Dicke haben oder nicht im selben Winkel zum Röntgenstrahl standen, zurückzuführen sein.
 
 
 
@@ -495,17 +513,17 @@
                 {Messgröße} & {Messwert} & {Literaturwert} & {Messgröße} & {Messwert} & {Literaturwert} \\
                 \midrule
 
-                $E_{\text{K}_{\alpha}}$ [eV] & 8043$\pm$34      & 8038  & $\sigma_{\text{K, Zn}}$  & 3,64 $\pm$ 0,07  & 3,57  \\
-                $E_{\text{K}_{\beta}}$ [eV]  & 8910$\pm$40       & 8905 & $\sigma_{\text{K, Ga}}$  & 3,64 $\pm$ 0,08  & 3,62  \\
-                $\sigma_{\text{K1}}$         & 3,31 $\pm$ 0     & 3,31  & $\sigma_{\text{K, Br}}$  & 3,84 $\pm$ 0,12  & 3,85  \\
-                $\sigma_{\text{K2}}$         & 12.41 $\pm$ 0,30 & 12,36 & $\sigma_{\text{K, Rb}}$  & 4,12 $\pm$ 0,14  & 3,95  \\
-                $\sigma_{\text{K3}}$         & 22,40 $\pm$ 2,10 & 21,96 & $\sigma_{\text{K, Sr}}$  & 4,13 $\pm$ 0,15  & 4,01  \\
-                $E_{\text{K, Zn}}$ [eV]      & 9600 $\pm$ 50    & 9650  & $\sigma_{\text{K, Zr}}$  & 4,38 $\pm$ 0,18  & 4,11  \\
-                $E_{\text{K, Ga}}$ [eV]      & 10350 $\pm$ 60   & 10370 & $\text{R}_{\infty}$ [eV] & 14,40 $\pm$ 0,04 & 13,61 \\
-                $E_{\text{K, Br}}$ [eV]      & 13480 $\pm$ 100  & 13470 &                          &                  &       \\
-                $E_{\text{K, Rb}}$ [eV]      & 15050 $\pm$ 130  & 15200 &                          &                  &       \\
-                $E_{\text{K, Sr}}$ [eV]      & 15990 $\pm$ 140  & 16100 &                          &                  &       \\
-                $E_{\text{K, Zr}}$ [eV]      & 17730 $\pm$ 180  & 17990 &                          &                  &       \\
+                $E_{\text{K}_{\alpha}}$ [eV] & 8043$\pm$34      & 8038  & $\sigma_{\text{K, Zn}}$        & 3,64 $\pm$ 0,07      & 3,57   \\
+                $E_{\text{K}_{\beta}}$ [eV]  & 8910$\pm$40       & 8905 & $\sigma_{\text{K, Ga}}$        & 3,64 $\pm$ 0,08      & 3,62   \\
+                $\sigma_{\text{K1}}$         & 3,31 $\pm$ 0     & 3,31  & $\sigma_{\text{K, Br}}$        & 3,84 $\pm$ 0,12      & 3,85   \\
+                $\sigma_{\text{K2}}$         & 12.41 $\pm$ 0,30 & 12,36 & $\sigma_{\text{K, Rb}}$        & 4,12 $\pm$ 0,14      & 3,95   \\
+                $\sigma_{\text{K3}}$         & 22,40 $\pm$ 2,10 & 21,96 & $\sigma_{\text{K, Sr}}$        & 4,13 $\pm$ 0,15      & 4,01   \\
+                $E_{\text{K, Zn}}$ [eV]      & 9600 $\pm$ 50    & 9650  & $\sigma_{\text{K, Zr}}$        & 4,38 $\pm$ 0,18      & 4,11   \\
+                $E_{\text{K, Ga}}$ [eV]      & 10350 $\pm$ 60   & 10370 & $\text{R}_{\infty}$ [eV]       & 14,40 $\pm$ 0,04     & 13,61  \\
+                $E_{\text{K, Br}}$ [eV]      & 13480 $\pm$ 100  & 13470 & $\text{R} \cdot 10^{-7}$ [1/m] & 1,1614 $\pm$ 0,0031  & 1,0974 \\
+                $E_{\text{K, Rb}}$ [eV]      & 15050 $\pm$ 130  & 15200 &                                &                      &        \\
+                $E_{\text{K, Sr}}$ [eV]      & 15990 $\pm$ 140  & 16100 &                                &                      &        \\
+                $E_{\text{K, Zr}}$ [eV]      & 17730 $\pm$ 180  & 17990 &                                &                      &        \\
                 \bottomrule
             \end{tabular}
         \end{table}
@@ -691,6 +709,8 @@
                     [1] \textit{Versuchsanleitung V602 - Röntgenemission und -absorption.} TU Dortmund, 2020 \newline
                     [2] National Institute of Standards and Technology: \textit{Fundamental Physical Constants} 17.Mai.2020
                         \url{https://physics.nist.gov/cgi-bin/cuu/Value?r}
+                    [3] \textit{Wellenlängen und Anregungsenergien von K- und L- Absorptionskanten} 18.Mai.2020
+                        \url{https://wissen.science-and-fun.de/tabellen-fur-spektroskopiker/wellenlaengen-und-anregungsenergien-von-k-und-l-absorptionskanten/}
         
             \newpage
 

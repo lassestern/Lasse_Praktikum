@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  17 MAY 2020 15:28
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  18 MAY 2020 19:02
  restricted system commands enabled.
 **Absorption.tex
 (./Absorption.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.109 seconds
+luaotfload | main : initialization completed in 0.113 seconds
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1501,34 +1501,27 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 60.
 File: Brems.png Graphic file (type png)
 <use Brems.png>
 Package luatex.def Info: Brems.png  used on input line 79.
-(luatex.def)             Requested size: 229.85817pt x 118.4422pt.
+(luatex.def)             Requested size: 250.95587pt x 129.32024pt.
  [3<./Brems.png>] [4] [5]
 <Kanten.png, id=100, 183.68625pt x 246.9225pt>
 File: Kanten.png Graphic file (type png)
 <use Kanten.png>
 Package luatex.def Info: Kanten.png  used on input line 190.
-(luatex.def)             Requested size: 183.68578pt x 246.92188pt.
+(luatex.def)             Requested size: 209.12778pt x 281.14038pt.
  [6<./Kanten.png>]
-<skizzebragg.png, id=112, 149.55875pt x 102.3825pt>
+<skizzebragg.png, id=113, 149.55875pt x 102.3825pt>
 File: skizzebragg.png Graphic file (type png)
 <use skizzebragg.png>
 Package luatex.def Info: skizzebragg.png  used on input line 223.
-(luatex.def)             Requested size: 149.55838pt x 102.38225pt.
-<Aufbau.png, id=113, 562.1pt x 310.15875pt>
+(luatex.def)             Requested size: 209.12778pt x 143.17204pt.
+ [7<./skizzebragg.png>]
+<Aufbau.png, id=123, 562.1pt x 310.15875pt>
 File: Aufbau.png Graphic file (type png)
 <use Aufbau.png>
 Package luatex.def Info: Aufbau.png  used on input line 237.
-(luatex.def)             Requested size: 562.09863pt x 310.15799pt.
-
-Overfull \hbox (143.84308pt too wide) in paragraph at lines 237--238
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7<./skizzebragg.png>] [8<./Aufbau.png>] [9]
-<Bragg.pdf, id=138, 462.528pt x 346.896pt>
+(luatex.def)             Requested size: 334.60571pt x 184.62956pt.
+ [8<./Aufbau.png>]
+<Bragg.pdf, id=135, 462.528pt x 346.896pt>
 File: Bragg.pdf Graphic file (type pdf)
 <use Bragg.pdf>
 Package luatex.def Info: Bragg.pdf  used on input line 311.
@@ -1538,140 +1531,138 @@ Overfull \hbox (44.2713pt too wide) in paragraph at lines 311--313
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:graphbragg' on page 10 undefined on input line 317
-.
-
-<Spektrum_Cu.pdf, id=139, 462.528pt x 346.896pt>
+[9]
+<Spektrum_Cu.pdf, id=144, 462.528pt x 346.896pt>
 File: Spektrum_Cu.pdf Graphic file (type pdf)
 <use Spektrum_Cu.pdf>
-Package luatex.def Info: Spektrum_Cu.pdf  used on input line 326.
+Package luatex.def Info: Spektrum_Cu.pdf  used on input line 325.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 326--328
- [][] 
- []
-
-[10<./Bragg.pdf>]
-<Peaks_Cu.pdf, id=206, 462.528pt x 346.896pt>
-File: Peaks_Cu.pdf Graphic file (type pdf)
-<use Peaks_Cu.pdf>
-Package luatex.def Info: Peaks_Cu.pdf  used on input line 344.
-(luatex.def)             Requested size: 462.52686pt x 346.89514pt.
-
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 344--346
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 325--326
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11<./Spektrum_Cu.pdf>] [12<./Peaks_Cu.pdf>]
-Overfull \hbox (23.0106pt too wide) detected at line 381
+[10<./Bragg.pdf>] [11<./Spektrum_Cu.pdf>]
+<Peaks_Cu.pdf, id=263, 462.528pt x 346.896pt>
+File: Peaks_Cu.pdf Graphic file (type pdf)
+<use Peaks_Cu.pdf>
+Package luatex.def Info: Peaks_Cu.pdf  used on input line 351.
+(luatex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 351--353
+ [][] 
+ []
+
+[12<./Peaks_Cu.pdf>]
+Overfull \hbox (23.0106pt too wide) detected at line 388
 [][][] \TU/LatinModernMath(1)/m/n/10.95 = []  ⟶  [][] = 42, 55 ± 0, 20,  [][
 ] = 47, 85 ± 0, 20
  []
 
-[13
-
-]
-Overfull \hbox (34.99382pt too wide) in paragraph at lines 428--440
+[13]
+Overfull \hbox (34.99382pt too wide) in paragraph at lines 435--447
  [][] 
  []
 
 [14]
-<Moseley.pdf, id=354, 462.528pt x 346.896pt>
+<Moseley.pdf, id=351, 462.528pt x 346.896pt>
 File: Moseley.pdf Graphic file (type pdf)
 <use Moseley.pdf>
-Package luatex.def Info: Moseley.pdf  used on input line 463.
+Package luatex.def Info: Moseley.pdf  used on input line 477.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 463--465
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 477--479
  [][] 
  []
 
 [15<./Moseley.pdf>]
-Overfull \hbox (4.40955pt too wide) in paragraph at lines 493--511
+Overfull \hbox (39.22327pt too wide) in paragraph at lines 511--529
  [][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16]
 
-LaTeX Warning: Float too large for page by 25.8096pt on input line 570.
+LaTeX Warning: Float too large for page by 25.8096pt on input line 588.
 
 [17] [18] [19] [20]
-<Zink.pdf, id=437, 462.528pt x 346.896pt>
+<Zink.pdf, id=429, 462.528pt x 346.896pt>
 File: Zink.pdf Graphic file (type pdf)
 <use Zink.pdf>
-Package luatex.def Info: Zink.pdf  used on input line 647.
+Package luatex.def Info: Zink.pdf  used on input line 665.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 647--648
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 665--666
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Gallium.pdf, id=438, 462.528pt x 346.896pt>
+<Gallium.pdf, id=430, 462.528pt x 346.896pt>
 File: Gallium.pdf Graphic file (type pdf)
 <use Gallium.pdf>
-Package luatex.def Info: Gallium.pdf  used on input line 654.
+Package luatex.def Info: Gallium.pdf  used on input line 672.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 654--655
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 672--673
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Brom.pdf, id=439, 462.528pt x 346.896pt>
+<Brom.pdf, id=431, 462.528pt x 346.896pt>
 File: Brom.pdf Graphic file (type pdf)
 <use Brom.pdf>
-Package luatex.def Info: Brom.pdf  used on input line 661.
+Package luatex.def Info: Brom.pdf  used on input line 679.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 661--662
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 679--680
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Rubidium.pdf, id=440, 462.528pt x 346.896pt>
+<Rubidium.pdf, id=432, 462.528pt x 346.896pt>
 File: Rubidium.pdf Graphic file (type pdf)
 <use Rubidium.pdf>
-Package luatex.def Info: Rubidium.pdf  used on input line 668.
+Package luatex.def Info: Rubidium.pdf  used on input line 686.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 668--669
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 686--687
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Strontium.pdf, id=441, 462.528pt x 346.896pt>
+<Strontium.pdf, id=433, 462.528pt x 346.896pt>
 File: Strontium.pdf Graphic file (type pdf)
 <use Strontium.pdf>
-Package luatex.def Info: Strontium.pdf  used on input line 675.
+Package luatex.def Info: Strontium.pdf  used on input line 693.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 675--676
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 693--694
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Zirkonium.pdf, id=442, 462.528pt x 346.896pt>
+<Zirkonium.pdf, id=434, 462.528pt x 346.896pt>
 File: Zirkonium.pdf Graphic file (type pdf)
 <use Zirkonium.pdf>
-Package luatex.def Info: Zirkonium.pdf  used on input line 682.
+Package luatex.def Info: Zirkonium.pdf  used on input line 700.
 (luatex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (44.2713pt too wide) in paragraph at lines 682--683
+Overfull \hbox (44.2713pt too wide) in paragraph at lines 700--701
  [][] 
  []
 
@@ -1684,55 +1675,59 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [28
+
+Overfull \hbox (240.89044pt too wide) in paragraph at lines 709--714
+\TU/lmtt/m/n/10.95 science-[]and-[]fun.de/tabellen-[]fur-[]spektroskopiker/well
+enlaengen-[]und-[]anregungsenergien-[]von-[]k-[]und-[]l-[]absorptionskanten/$[]
+ 
+ []
+
+[28
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 697.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 697.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 717.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 717.
  (./Absorption.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 697.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 697.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 717.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 717.
 Package rerunfilecheck Info: File `Absorption.aux' has not changed.
-(rerunfilecheck)             Checksum: F0F5B7F8D02F487597C57D5BA13312E6;19998.
+(rerunfilecheck)             Checksum: 3495E1DF5CA346D13ED7ECC6564D0471;20064.
 Package rerunfilecheck Info: File `Absorption.toc' has not changed.
-(rerunfilecheck)             Checksum: A666F4C8851929568732A4ECEFF202D4;1858.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 8152E938E1C9A1FA5BF7C177E9CFC36B;1857.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 697.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 717.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33356 strings out of 494291
- 244174,1144653 words of node,token memory allocated
- 182265 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 23219 glyph, 8399 attrib
-ute, 65 glue_spec, 1202 attribute_list, 1 write nodes
-   avail lists: 1:6,2:3921,3:159,4:49,5:285,6:46,7:2390,8:80,9:374,10:28,11:487
- 36626 multiletter control sequences out of 65536+600000
- 92 fonts using 36062895 bytes
+ 33347 strings out of 494291
+ 244179,1144653 words of node,token memory allocated
+ 192995 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 24671 glyph, 8644 attrib
+ute, 65 glue_spec, 1237 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:6,2:3913,3:159,4:57,5:284,6:44,7:2188,8:132,9:374,10:29,11:487
+
+ 36617 multiletter control sequences out of 65536+600000
+ 92 fonts using 36063199 bytes
  54i,14n,109p,9120b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/l
 mroman10-italic.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/p
-ublic/lm/lmroman10-bold.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/op
-entype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/2019/texm
-f-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/lasse/.local/texlive
-/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lasse
-/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></
-home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmod
-ern-math.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/l
-m/lmroman10-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/openty
-pe/public/lm/lmroman12-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/f
-onts/opentype/public/lm/lmsans10-bold.otf>
-Output written on Absorption.pdf (28 pages, 462450 bytes).
+ublic/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-dist/f
+onts/opentype/public/lm/lmroman5-regular.otf></home/lasse/.local/texlive/2019/te
+xmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.local/
+texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/las
+se/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math
+.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroma
+n10-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/publi
+c/lm/lmroman12-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/ope
+ntype/public/lm/lmsans10-bold.otf>
+Output written on Absorption.pdf (28 pages, 463588 bytes).
 
-PDF statistics: 894 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
+PDF statistics: 888 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
  86 named destinations out of 1000 (max. 131072)
  177 words of extra memory for PDF output out of 10000 (max. 100000000)
 

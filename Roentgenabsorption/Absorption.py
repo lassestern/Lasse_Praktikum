@@ -94,7 +94,7 @@ print(params)
 plt.plot(theta_Cu[120:128], rate_Cu[120:128], "r-", label=r'$K_{\beta}$')
 plt.plot(theta_Cu[142:151], rate_Cu[142:151], "-", label=r'$K_{\alpha}$')
 plt.xlabel(r'Bragg-Winkel [°]')
-plt.ylabel(r'Impulsrfrom scipy.optimize import curve_fitate [Impulse/Sekunde]')
+plt.ylabel(r'Impulsrate [Impulse/Sekunde]')
 plt.legend(loc = 'best')
 plt.savefig('Spektrum_Cu.pdf')
 plt.clf()
@@ -195,7 +195,7 @@ def s_k (Z, E):
 theta_Br, rate_Br = np.genfromtxt("Brom.dat", unpack = True)# Beschleunigungsspannung U=35kV, Strom I=1mA, LiF-Kristall Integrationszeit pro Winkel t=20s
 theta_Br_u = unp.uarray(theta_Br, 0.1)
 E_Br = const.h * const.c/(2*201.4*10**(-12)*unp.sin(theta_Br_u*2*np.pi/360)) /const.e
-plt.plot(theta_Br, rate_Br, "-", label=r"Absorptionsspektrum Br")
+plt.plot(theta_Br, rate_Br, "x", label=r"Absorptionsspektrum Br")
 plt.xlabel(r"$\theta$ [°]")
 plt.ylabel(r"Impulsrate [Imp/s]")
 plt.legend(loc="best")
@@ -218,7 +218,7 @@ print(s_k(35, E_kBr))
 theta_Ga, rate_Ga = np.genfromtxt("Gallium.dat", unpack = True)# Beschleunigungsspannung U=35kV, Strom I=1mA, LiF-Kristall Integrationszeit pro Winkel t=20s
 theta_Ga_u = unp.uarray(theta_Ga, 0.1)
 E_Ga = const.h * const.c/(2*201.4*10**(-12)*unp.sin(theta_Ga_u*2*np.pi/360))/const.e
-plt.plot(theta_Ga, rate_Ga, "-", label=r"Absorptionsspektrum Ga")
+plt.plot(theta_Ga, rate_Ga, "x", label=r"Absorptionsspektrum Ga")
 plt.xlabel(r"$\theta$ [°]")
 plt.ylabel(r"Impulsrate [Imp/s]")
 plt.legend(loc="best")
@@ -237,7 +237,7 @@ print(s_k(31, E_kGa))
 theta_Zn, rate_Zn = np.genfromtxt("Zink.dat", unpack = True)# Beschleunigungsspannung U=35kV, Strom I=1mA, LiF-Kristall Integrationszeit pro Winkel t=20s
 theta_Zn_u = unp.uarray(theta_Zn, 0.1)
 E_Zn = const.h * const.c/(2*201.4*10**(-12)*unp.sin(theta_Zn_u*2*np.pi/360))/const.e
-plt.plot(theta_Zn, rate_Zn, "-", label=r"Absorptionsspektrum Zn")
+plt.plot(theta_Zn, rate_Zn, "x", label=r"Absorptionsspektrum Zn")
 plt.xlabel(r"$\theta$ [°]")
 plt.ylabel(r"Impulsrate [Imp/s]")
 plt.legend(loc="best")
@@ -256,7 +256,7 @@ print(s_k(30, E_kZn))
 theta_Sr, rate_Sr = np.genfromtxt("Strontium.dat", unpack = True)# Beschleunigungsspannung U=35kV, Strom I=1mA, LiF-Kristall Integrationszeit pro Winkel t=20s
 theta_Sr_u = unp.uarray(theta_Sr, 0.1)
 E_Sr = const.h * const.c/ (2*201.4*10**(-12)*unp.sin(theta_Sr_u*2*np.pi/360))/const.e
-plt.plot(theta_Sr, rate_Sr, "-", label=r"Absorptionsspektrum Sr")
+plt.plot(theta_Sr, rate_Sr, "x", label=r"Absorptionsspektrum Sr")
 plt.xlabel(r"$\theta$ [°]")
 plt.ylabel(r"Impulsrate [Imp/s]")
 plt.legend(loc="best")
@@ -275,7 +275,7 @@ print(s_k(38, E_kSr))
 theta_Rb, rate_Rb = np.genfromtxt("Rubidium.dat", unpack = True)# Beschleunigungsspannung U=35kV, Strom I=1mA, LiF-Kristall Integrationszeit pro Winkel t=20s
 theta_Rb_u = unp.uarray(theta_Rb, 0.1)
 E_Rb = const.h * const.c/(2*201.4*10**(-12)*unp.sin(theta_Rb_u*2*np.pi/360))/const.e
-plt.plot(theta_Rb, rate_Rb, "-", label=r"Absorptionsspektrum Rb")
+plt.plot(theta_Rb, rate_Rb, "x", label=r"Absorptionsspektrum Rb")
 plt.xlabel(r"$\theta$ [°]")
 plt.ylabel(r"Impulsrate [Imp/s]")
 plt.legend(loc="best")
@@ -294,7 +294,7 @@ print(s_k(37, E_kRb))
 theta_Zr, rate_Zr = np.genfromtxt("Zirkonium.dat", unpack = True)# Beschleunigungsspannung U=35kV, Strom I=1mA, LiF-Kristall Integrationszeit pro Winkel t=20s
 theta_Zr_u = unp.uarray(theta_Zr, 0.1)
 E_Zr = const.h * const.c/(2*201.4*10**(-12)*unp.sin(theta_Zr_u*2*np.pi/360))/const.e
-plt.plot(theta_Zr, rate_Zr, "-", label=r"Absorptionsspektrum Zr")
+plt.plot(theta_Zr, rate_Zr, "x", label=r"Absorptionsspektrum Zr")
 plt.xlabel(r"$\theta$ [°]")
 plt.ylabel(r"Impulsrate [Imp/s]")
 plt.legend(loc="best")
@@ -323,7 +323,7 @@ param, covm = curve_fit(grund, Z[1:]-noms(s), np.sqrt(nomsE*const.e))
 x = np.linspace(26, 40.1)
 plt.plot(Z[1:] - noms(s), np.sqrt(noms(E_ks)*const.e), "x", label=r"Messwerte")
 plt.plot(x, param[1]*x+param[0], "g-", label=r"Lineare Regression")
-plt.xlabel(r"$Z_{\text{eff}}")
+plt.xlabel(r"$z_{eff}$")
 plt.ylabel(r"$\sqrt{E_K}$ in $\sqrt{J}$")
 plt.legend(loc = "best")
 plt.savefig("Moseley.pdf")
@@ -332,8 +332,9 @@ print(param)
 errors = np.sqrt(np.diag(covm))
 m = unp.uarray(param[1], errors[1])
 print(errors)
-print("Rydberg-Konstante")
+print("Rydberg-Energie und Konstante")
 print(m**2/const.e)
+print((m**2)/(const.h*const.c))
 
 
 

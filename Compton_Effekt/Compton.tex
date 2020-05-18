@@ -100,8 +100,8 @@
             \label{fig:SkizzeCompton}
         \end{figure}
         \FloatBarrier
-        \noindent
 
+        \noindent
         Dieser Effekt kann bei freien Elektronen für Photonen aller Energien auftreten. Jedoch ist die Wellenlänge sichtbaren Lichts so viel größer
         als die Compton-Wellenlänge (Faktor $10^5$), dass nach der Streuung quasi kein Wellenlängenunterschied zu messen wäre. Zudem tritt der Compton-Effekt
         auch bei in Festkörpern befindlichen Elektronen statt, wenn die Photonenenergie ausreicht, um diese zu lösen. Dies ist bei Röntgen- oder $\gamma$-Strahlung
@@ -190,8 +190,8 @@
         \FloatBarrier
         \begin{figure}[h]
             \centering
-            \caption{In der Abbildung ist der Aufbau zur Messung der Impulsraten der gestreuten Strahlung zu sehen. Während in Teil a) der Aufbau zur Messung von $I_1$ und in Teil b) der zu $I_2$ dargestellt ist, entspricht der Aufbau zur Messung von $I_0$ beiden gezeigten bei Entfernung des Aluminium-Absorbers.[1]}
             \includegraphics[width = 0.8\linewidth]{absorber.png}
+            \caption{In der Abbildung ist der Aufbau zur Messung der Impulsraten der gestreuten Strahlung zu sehen. Während in Teil a) der Aufbau zur Messung von $I_1$ und in Teil b) der zu $I_2$ dargestellt ist, entspricht der Aufbau zur Messung von $I_0$ beiden gezeigten bei Entfernung des Aluminium-Absorbers.[1]}
             \label{fig:SkizzeAbsorber}
         \end{figure} 
         \FloatBarrier
@@ -221,8 +221,8 @@
         folgende Winkel:
 
         \begin{align}
-            &\alpha_{K_{\alpha}} = \text{sin}^{-1}\left(\frac{hc}{2d \cdot 8038\cdot eV }\right) \approx 23° \qquad \text{mit} \qquad \lambda = \frac{hc}{E} \\
-            &\alpha_{K_{\beta}}  = \text{sin}^{-1}\left(\frac{hc}{2d \cdot 8905\cdot eV }\right) \approx 21°
+            &\alpha_{K_{\alpha, \text{Lit}}} = \text{sin}^{-1}\left(\frac{hc}{2d \cdot 8038\cdot eV }\right) \approx 23° \qquad \text{mit} \qquad \lambda = \frac{hc}{E} \\
+            &\alpha_{K_{\beta, \text{Lit}}}  = \text{sin}^{-1}\left(\frac{hc}{2d \cdot 8905\cdot eV }\right) \approx 21°
         \end{align}
 
         \noindent
@@ -232,8 +232,8 @@
         \FloatBarrier
         \begin{figure}[h]
             \centering
-            \caption{In der Abbildung ist das Strahlungsspektrum der Kupfer-Röntgenröhre bei 35kV zu sehen. Die Impulsrate wird gegen den Bragg-Winkel aufgetragen, der in Verbindung zur Wellenlänge steht. Neben dem kontinuierlichen Bremsspektrum, das über das gesamte Winkelintervall geht, sind auch die beiden charakteristischen Peaks $K_{\beta}$ bei $(20,2 \pm 0,1)°$ und $K_{\alpha}$ bei $(22,5 \pm 0,1)°$ gut zu erkennen.}
             \includegraphics[width = 0.9\linewidth]{Spektrum_Cu.pdf}
+            \caption{In der Abbildung ist das Strahlungsspektrum der Kupfer-Röntgenröhre bei 35kV zu sehen. Die Impulsrate wird gegen den Bragg-Winkel aufgetragen, der in Verbindung zur Wellenlänge steht. Neben dem kontinuierlichen Bremsspektrum, das über das gesamte Winkelintervall geht, sind auch die beiden charakteristischen Peaks $K_{\beta}$ bei $(20,2 \pm 0,1)°$ und $K_{\alpha}$ bei $(22,5 \pm 0,1)°$ gut zu erkennen.}
             \label{fig:Spektrum}
         \end{figure}
         \FloatBarrier
@@ -246,7 +246,12 @@
         \end{align}
 
         \noindent
-        Zum Vergleich mit den Literaturenergien wird diese aus den ermittelten Winkeln über die nach E umgestellte Formel \ref{eqn:Bragg} berechnet.
+        Zum Vergleich mit den Literaturenergien wird diese aus den ermittelten Winkeln über die nach E umgestellte Formel \ref{eqn:Bragg} berechnet. Der zugehörige Fehler berechnet sich über
+        folgende Formel:
+
+        \begin{equation*}
+            \Delta E = \frac{hcn}{2d} \cdot \frac{2 \cdot \cos(\theta)}{\cos(2\theta)-1} \cdot \Delta \theta
+        \end{equation*}
 
         \begin{align}
             &E = \frac{hc}{2 \cdot d \cdot \sin(\alpha)} \qquad \text{mit} \qquad d=201,4 \, \text{pm} \nonumber\\
@@ -289,8 +294,8 @@
         \FloatBarrier
         \begin{figure}[h]
             \centering
-            \caption{In der Abbildung ist die Wellenlängenabhängigkeit der Transmission des Aluminiumabsorbers zu sehen. Um den linearen Zusammenhang in der Auswertung besser nutzen zu können, wird zudem eine lineare Regression mit angegebenen Parametern \ref{eqn:Regression} über die Messwerte gelegt.}
             \includegraphics[width = 0.9\linewidth]{Compton_Alu.pdf}
+            \caption{In der Abbildung ist die Wellenlängenabhängigkeit der Transmission des Aluminiumabsorbers zu sehen. Um den linearen Zusammenhang in der Auswertung besser nutzen zu können, wird zudem eine lineare Regression mit angegebenen Parametern \ref{eqn:Regression} über die Messwerte gelegt.}
             \label{fig:Transmission}
         \end{figure}
         \FloatBarrier
@@ -352,10 +357,10 @@
 
     \section{Diskussion}
         Zunächst ist die Aufnahme des Röntgenspektrums der Kupfer-Röntgenröhre als gelungen zu bezeichnen. Im Spektrum ist die kontinuierliche Bremsstrahlung 
-        klar neben den charakteristischen Peaks zu erkennen. Die Energien der gemessenen Peaks \ref{eqn:EGraph} weichen zudem nur geringfügig von den Literaturwerten [2] ab, 
+        klar neben den charakteristischen Peaks zu erkennen. Die Energien der gemessenen Peaks (\ref{eqn:EGraph}) weichen zudem nur geringfügig von den Literaturwerten [2] ab, 
         die $K_{\alpha}\text{-Energie}$ um 0,07 \% , die $K_{\beta}\text{-Energie}$ um 0,1 \%. Der ihnen zugehörige Literaturwert liegt jeweils im Fehlerbereich der Messgröße.
         Die anschließende Bestimmung der Compton-Wellenlänge ergibt eine Wellenlänge (\ref{eqn:ycwert}), die um 43\% von dem Literaturwert [3] abweicht. Der Literaturwert liegt zudem nicht
-        im Fehlerbalken der Messgröße. Dieser Fehler ist vermutlich auf den Absorber zurückzuführen. Denn zur genauen Bestimmung der Wellenlänge muss die Absorberdicke vor und nach Streuer gleich sein.
+        im Fehlerbalken der Messgröße. Dieser Fehler ist vermutlich auf den Absorber zurückzuführen. Denn zur genauen Bestimmung der Wellenlänge muss die Absorberdicke in den Positionen vor und nach Streuer gleich sein.
         Dies ist nicht der Fall, wenn die Absorberplatte keine homogene Dicke besitzt und der Punkt der Platte, auf den die Strahlung trifft, bei beiden Positionen nicht derselbe ist. Die Dicke ändert
         sich auch, wenn die Absorberplatte in den beiden Positionen nicht im gleichen Winkel zum Strahl steht. Andererseits könnte die Ungenauigkeit auch auf eine ungenaue Bestimmung der Transmission 
         in Abhängigkeit von der Wellenlänge zurückgeführt werden. Jedoch wurde bei dieser Messung die Totzeitkorrektur durchgeführt und es ergab sich auch ein deutlicher linearer Zusammenhang. 
@@ -374,7 +379,7 @@
                 \midrule
                 $E_{K_{\alpha}}$ [eV]& 8043$\pm$34 & 8038 \\
                 $E_{K_{\beta}}$  [eV]& 8910$\pm$40 & 8905 \\
-                $\lambda_C$      [pm}& 3,8$\pm$1,1 & 2,43 \\
+                $\lambda_C$      [pm]& 3,8$\pm$1,1 & 2,43 \\
                 \bottomrule
             \end{tabular}
         \end{table}

@@ -1,0 +1,15 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Theoretische Grundlagen}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Compton-Effekt}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Röntgenstrahlung}{4}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Bragg-Reflexion}{5}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Geiger-Müller-Zählrohr}{6}{subsection.1.4}% 
+\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Aufnahme des Röntgenspektrums}{6}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Bestimmung der Wellenlängenabhängigkeit der Transmission}{6}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Bestimmung der Compton-Wellenlänge}{7}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}Auswertung}{8}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Wellenlängenabhängigkeit der Transmission}{10}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Bestimmung der Compton-Wellenlänge}{11}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Diskussion}{12}{section.4}% 
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{14}{section.5}% 
