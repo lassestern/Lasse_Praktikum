@@ -1,0 +1,16 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Theoretische Grundlagen des Geiger-Müller-Zählrohrs}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Aufbau}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Funktionsbereiche des Zählrohrs}{3}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Totzeit, Erholungszeit und Nachentladungen}{5}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Charakteristik des Geiger-Müller-Zählrohrs}{7}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.5}Anodenstrom}{8}{subsection.1.5}% 
+\contentsline {section}{\numberline {2}Durchführung}{8}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Messschaltung}{8}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Charakteristik}{8}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Totzeit-Bestimmung}{9}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Freigesetzte Ladungen}{9}{subsection.2.4}% 
+\contentsline {section}{\numberline {3}Auswertung}{9}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Charakteristik des Geiger-Müller-Zählrohrs}{9}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Totzeit-Bestimmung}{11}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Freigesetzte Ladung}{11}{subsection.3.3}% 

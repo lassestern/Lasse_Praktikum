@@ -60,10 +60,6 @@
     \tableofcontents
     \newpage
 
-    \section{Zielsetzung}
-        Über die Messung von Absorptionsspektren von Atomen sollen die Übergangsenergien der Elektronen aus der K-Schale bestimmt werden.
-
-
 
     \section{Theoretische Grundlagen}
         \subsection{Röntgenstrahlung} \label{Röntgen}
@@ -94,6 +90,7 @@
                 \end{equation*}
                 \noindent
             
+            \newpage
             \subsubsection{Charakteristische Strahlung}
                 Die deutlich erkennbaren Peaks im Röntgenspektrum sind von dem Anodenmaterial der Röntgenröhre abhängig und werden daher als charakteristische Strahlung bezeichnet. Sie entstehen, wenn
                 ein beschleunigtes Elektron ein Elektron eines Atoms des Anodenmaterials aus dessen Schale haut. Das ionisierte Atom wird nun in den Grundzustand zurückgesetzt, wenn ein Elektron 
@@ -148,9 +145,9 @@
             Plätze in eben jener nächsthöheren Schale anheben. Dies geschieht natürlich bei mehreren Energien, da es auch mehrere Schalen gibt. Die für diese Anregungen notwendige Frequenz
             der Röntgenstrahlung berechnet sich wie folgt:
 
-            \begin{equation}
+            \begin{equation*}
               h \cdot \nu_{\text{abs}} = E_n - E_{\infty}
-            \end{equation}
+            \end{equation*}
             
             \noindent
             Diese Frequenzen liegen nun an den Absorptionskanten und können auch in die zugehörige Energie umgerechnet werden. Auch hier können z.B bei der L-Kante aufgrund der Feinstruktur mehrere
@@ -265,12 +262,13 @@
           die zugehörigen Absorptionsspektren gemessen.
           
 
-    
+    \newpage
     \section{Auswertung}
         
-        Für weitere Rechnungen werden zunächst Elemtareigenschaften aus der Literatur gesucht und berechnet. Die $\sigma_k$ werden dabei aus $E_k^{\text{Lit}}$, der Rydbergenergie $R_{\infty}$, der 
-        Ordnungszahl Z und der Sommerfeldschen Feinstrukturkonstante $\alpha$ über Formel \ref{eqn:sigmak} berechnet, die Winkel $\theta_k^{\text{Lit}}$ aus $E_k^{\text{Lit}}$ und der Gitterkonstante d, nach
-        Umstellen von Gleichung \ref{eqn:Energie} nach $\theta$ bei n=1.
+        Für weitere Rechnungen werden zunächst Elemtareigenschaften aus der Literatur gesucht [2] und berechnet. Die $\sigma_k$ werden dabei aus $E_k^{\text{Lit}}$, der Rydbergenergie $R_{\infty}$, der 
+        Ordnungszahl Z und der Sommerfeldschen Feinstrukturkonstante $\alpha$ [3] über Formel \ref{eqn:sigmak} berechnet, die Winkel $\theta_k^{\text{Lit}}$ aus $E_k^{\text{Lit}}$ [3] und der Gitterkonstante d, nach
+        Umstellen von Gleichung \ref{eqn:Energie} nach $\theta$ bei n=1. Die Naturkkonstante werden über die Scipy-Funktion constants bezogen, die die Werte vom National Institute of Standards and Technology
+        bezieht [3].
         
         \begin{equation*}
           \theta_k^{\text{Lit}} = \arcsin\left(\frac{hc}{2 \cdot 201,4 \cdot 10^{-12} \text{m} \cdot E_k^{\text{Lit}}}\right)
@@ -281,12 +279,12 @@
         \FloatBarrier
         \begin{table}[h]
           \centering
-          \caption{In der Tabelle sind Literaturwerte von Eigenschaften der im Experiment verwendeten Elemente dargestellt. Sie werden teils auseinander errechnet.}
+          \caption{In der Tabelle sind Literaturwerte [2] von Eigenschaften der im Experiment verwendeten Elemente dargestellt. Sie werden teils auseinander errechnet.}
           \label{tab:Elemente}
         
           \begin{tabular}{c c c c c}
             \toprule
-            {Material}  & {Ordnungszahl Z} & {$E_k^{\text{Lit}}$ [eV]} & {$\theta_k^{\text{Lit}}$ [°]} & {$\sigma_k$} \\ 
+            {Material}  & {Ordnungszahl Z } & {$E_k^{\text{Lit}}$ [eV]} & {$\theta_k^{\text{Lit}}$ [°]} & {$\sigma_k$} \\ 
             \midrule
             Cu	                &   29           &  8980          &  20,05     &    3,31   \\
             Zn	                &   30           &  9650          &  18,60     &    3,57   \\
@@ -300,15 +298,15 @@
         \end{table}
   
         \FloatBarrier
-        
+        \newpage
         \subsection{Überprüfung der Bragg-Bedingung}
             Um die Bragg-Bedingung zu überprüfen wird der LiF-Kristall in einem Winkel $\theta$ von 14° in den Röntgenstrahl gestellt. Aus Skizze \ref{fig:SkizzeBragg} geht hervor, dass das 
             Intensitätsmaximum der reflektierten Strahlung bei einem Winkel von $2\theta$, also 28°, zum Strahl zu finden sein sollte.
             \FloatBarrier
             \begin{figure}[h]
               \centering
-              \caption{In dem Graphen ist die Impulsrate der am LiF-Kristall reflektierten Röntgenstrahlung in Imp/s gegen den Messwinkel des Geiger-Müller-Zählrohrs relativ zum Röntgenstrahl aufgetragen. Das Intensitätsmaximum liegt bei 28,2°.}
               \includegraphics{Bragg.pdf}
+              \caption{In dem Graphen ist die Impulsrate der am LiF-Kristall reflektierten Röntgenstrahlung in Imp/s gegen den Messwinkel des Geiger-Müller-Zählrohrs relativ zum Röntgenstrahl aufgetragen. Das Intensitätsmaximum liegt bei 28,2°.}
               \label{fig:bragggraph}
             \end{figure}
             \FloatBarrier  
@@ -316,7 +314,7 @@
             \noindent
             Die Auswertung der in Grafik \ref{fig:bragggraph} dargestellten Messwerte über die Scipy-Funktion findPeaks liefert das Intensitätsmaximum bei einem Winkel von $(28,2 \pm 0,1)°$. 
 
-
+        \newpage
         \subsection{Emissionspektrum}
             Zunächst werden die gesamten Messdaten der Messung zur Intensität in Abhängigkeit vom Bragg-Winkel in einer Grafik aufgetragen.
             \FloatBarrier
@@ -347,8 +345,8 @@
             \FloatBarrier
             \begin{figure}[h]
               \centering
-              \caption{In dem Graphen sind nun nur noch die charakteristischen Peaks des Röntgenspektrums der Kupferröntgenröhre, in Form der Impulsrate in Imp/s in Abhängigkeit vom Bragg-Winkel aufgetragen, da der Untegrund des Bremsspektrums abgezogen wurde. Die Halbwertsbreite des $K_{\beta}-$ Peaks (links) und des $K_{\alpha}-$ Peaks (rechts) sind durch die Grünen Boxen gekennzeichnet.}
               \includegraphics{Peaks_Cu.pdf}
+              \caption{In dem Graphen sind nun nur noch die charakteristischen Peaks des Röntgenspektrums der Kupferröntgenröhre, in Form der Impulsrate in Imp/s in Abhängigkeit vom Bragg-Winkel aufgetragen, da der Untegrund des Bremsspektrums abgezogen wurde. Die Halbwertsbreite des $K_{\beta}-$ Peaks (links) und des $K_{\alpha}-$ Peaks (rechts) sind durch die Grünen Boxen gekennzeichnet.}
               \label{fig:graphpeak}
             \end{figure}
             \FloatBarrier
@@ -381,11 +379,12 @@
             \end{equation}
             
             \noindent
-            werden die Auflösungen der Peaks berechnet, die bei dem verwendeten Material eine genügende Genauigkeit aufweisen, sodass kein statistischer Fehler betrachtet werden muss.
+            werden die Auflösungen der Peaks berechnet, die bei dem verwendeten Material eine genügende Genauigkeit aufweisen, sodass kein statistischer Fehler betrachtet werden muss. 
 
-            \begin{equation}
-              \text{Auflösung} = \frac{E_{\text{Peak}}}{\Delta E_{\text{Peak}}} \qquad \longrightarrow \qquad \text{Auflösung}_{\beta} = 42,55 \pm 0,20 , \qquad \text{Auflösung}_{\alpha} = 47,85 \pm 0,20
-            \end{equation}
+            \begin{align*}
+              \text{Auflösung} &= \frac{E_{\text{Peak}}}{\Delta E_{\text{Peak}}} \qquad \longrightarrow \qquad \text{Auflösung}_{\beta} = 42,55 \pm 0,20 , \qquad \text{Auflösung}_{\alpha} = 47,85 \pm 0,20 \\
+              \Delta \text{Auflösung} &= \frac{ E_{\text{Peak}}}{\Delta E_{\text{Peak}}} \cdot \text{Fehler}(E_{\text{Peak}})
+            \end{align*}
             
             \noindent
             Zuletzt werden aus den Formeln \ref{eqn:Cusigmas} die Abschirmkonstanten $\sigma_1, \sigma_2$ und $\sigma_3$ des Kupferatoms bestimmt, dazu werden die bestimmten Energien der Peaks
@@ -404,7 +403,7 @@
             \end{align*}
             \noindent
 
-          
+          \newpage
           \subsection{Absorptionsspektren}
             Die gemessenen Absorptionsspektren der Absorbermaterialien Zink \ref{fig:Zink}, Gallium \ref{fig:Gallium}, Brom \ref{fig:Brom}, Rubidium \ref{fig:Rubidium}, Strontium \ref{fig:Strontium}
             und Zirkonium \ref{fig:Zirkonium} werden dargestellt, indem die Impulsrate der absorbierten Strahlung gegen den zugehörigen Bragg-Winkel aufgetragen wird. 
@@ -473,20 +472,22 @@
             \FloatBarrier
             \begin{figure}[h]
               \centering
-              \caption{In dem Graphen sind die Wurzeln der K-Kantenenergien gegen die effekktiven Kernladungszahlen der Elemente $(Z-\sigma)$ aufgetragen.}
               \includegraphics{Moseley.pdf}
+              \caption{In dem Graphen sind die Wurzeln der K-Kantenenergien gegen die effekktiven Kernladungszahlen der Elemente $(Z-\sigma)$ aufgetragen.}
               \label{fig:Moseley}
-            \end{figure}
+            \end{figure} 
             \FloatBarrier
 
-
-          \section{Diskussion}
+        
+        \newpage
+        \section{Diskussion}
             Die zunächst durchgeführte Überprüfung der Bragg-Bedingung hat einen Winkel ergeben, der um 0,2° vom Literaturwert abweicht. Die kleine Abweichung lässt sich womöglich durch Unebenheiten
             in der Oberfläche des Streuers zu erklären. Dennoch ist der Wert aussagekräftig genug, um die Theorie zur Lage des Intensitätmaxium bei der Bragg-Reflexion zu bestätigen. Wenn dieses
             Intensitätsmaximum um eine Winkel verschoben ist, ändert sich auch das später gemessene Cu-Spektrum. Das Spektrum verschiebt sich einfach um einen Winkel, wenn das Geiger-Müller-Zählrohr
             korrekt geeicht ist und der Fehler in der Orientierung des Streuers liegt. Wenn jedoch die Orientierung des Streuers korrekt ist und das Geiger-Müller-Zählrohr nicht beim doppelten
             Bragg-Winkel, sondern etwas davon abgewichen misst, misst er nicht das Intensitätmaxium, sondern immer etwas weniger, sodass die Intensität über das ganze Spektrum verringert gemessen wird.
-            der Peaks des charakteristischen Spektrums liegen beide im $1\sigma$-Bereich der Messwerte. Dementsprechend decken sich diese Messwerte mit der Theorie. Auch die Literaturwerte der 
+            Das gemessene Spektrum gibt deutlich ein Röntgenspektrum mit der kontinuierlichen Bremsstrahlung und den charakteristischen Peaks wieder.
+            Die Literaturenergien der Peaks des charakteristischen Spektrums liegen beide im $1\sigma$-Bereich der Messwerte. Dementsprechend decken sich diese Messwerte mit der Theorie. Auch die Literaturwerte der 
             Abschirmkonstanten $\sigma_1, \sigma_2$ und $\sigma_3$ liegen im $1\sigma$-Bereich der Messwerte, sodass die Messwerte ein gutes Bild der Theorie abbilden.
             Daraufhin wurden die Absorptionskantenenergien der Materialien Zink, Gallium, Brom, Rubidium, Strontium und Zirkonium bestimmt. Während die Energien von Zink, Gallium, Brom und Strontium
             innerhalb der $1\sigma$-Umgebung liegen und somit sehr gut mit den Experimentalwerten übereinstimmen, liegen die Literaturenergien von Rubidium und Zirkonium leicht außerhalb des 
@@ -496,17 +497,18 @@
             Literaturwert entfernt und ist nur schwer durch diesen zu bestätigen. Die anderen Abschirmkonstanten decken sich alle gute mit den zugehörigen Literaturwerten. Der $1\sigma$-Bereich 
             des zuletzt bestimmten Wert der Rydbergenergie $\text{R}_{\infty}$ enthält nicht den Literaturwert. Dennoch ist die Messung als erfolgreich zu beschreiben, da der Experimentalwert um
             5,8 \% vom Literaturwert abweicht und so eine gegnügende Genauigkeit besitzt. Der vorhandene Fehler könnte auf Unregelmäßigkeiten in der Dicke der eingesetzten Absorberplatten für 
-            die einzelnen Materialien, wenn die Platten zum Beispiel keine homogene Dicke haben oder nicht im selben Winkel zum Röntgenstrahl standen, zurückzuführen sein.
+            die einzelnen Materialien zurückzuführen sein. Dies ist der Fall, wenn die Platten zum Beispiel nicht alle dieselbe homogene Dicke haben oder nicht im selben Winkel zum Röntgenstrahl 
+            stehen.
 
 
 
 
 
-
+          \FloatBarrier
 
           \begin{table}[h]
             \centering
-            \caption{In der Tabelle werden die Messwerte mit den Literaturwerten verglichen. Da lediglich ein Vergleich des Wertes von Nöten ist, werden die Einheiten nicht mit aufgeschrieben und die Exponenten möglichst gekürzt.}
+            \caption{In der Tabelle werden die Messwerte mit den Literaturwerten verglichen.}
             
             \begin{tabular}{c c c c c c }
                 \toprule
@@ -527,6 +529,8 @@
                 \bottomrule
             \end{tabular}
         \end{table}
+
+        \FloatBarrier
 
 
 
@@ -589,6 +593,7 @@
             \FloatBarrier
 
             \newpage
+
             \subsection{Wertetabelle - Absorptionsspektren}
             In den Tabellen sind die zu den einzelnen Materialien gehörigen Wertepaare zur Messung der Absorptionskanten eingetragen.
             \FloatBarrier
@@ -655,6 +660,7 @@
             \FloatBarrier
 
             \newpage
+
             \subsection{Absorptionsspektren}
             In den Grafiken sind die Absorptionsspektren der einzelnen Absorbermaterialien dargestellt, wobei die Winkel indirket die Energie der absorbierten Strahlung und die Impulsrate die 
             Intensität der absorbierten Strahlung wiedergibt. Der plötzliche Anstieg in den Graphen markiert dabei die K-Kante.
@@ -708,7 +714,7 @@
             \section{Literaturverzeichnis}
                     [1] \textit{Versuchsanleitung V602 - Röntgenemission und -absorption.} TU Dortmund, 2020 \newline
                     [2] National Institute of Standards and Technology: \textit{Fundamental Physical Constants} 17.Mai.2020
-                        \url{https://physics.nist.gov/cgi-bin/cuu/Value?r}
+                        \url{https://physics.nist.gov/cgi-bin/cuu/Value?r} \newline
                     [3] \textit{Wellenlängen und Anregungsenergien von K- und L- Absorptionskanten} 18.Mai.2020
                         \url{https://wissen.science-and-fun.de/tabellen-fur-spektroskopiker/wellenlaengen-und-anregungsenergien-von-k-und-l-absorptionskanten/}
         
