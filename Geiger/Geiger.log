@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  23 MAY 2020 21:38
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  24 MAY 2020 19:43
  restricted system commands enabled.
 **Geiger.tex
 (./Geiger.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.123 seconds
+luaotfload | main : initialization completed in 0.124 seconds
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1339,7 +1339,11 @@ Package csquotes Info: ... found 'babel' package.
 LaTeX Warning: Unused global option(s):
     [titlepage=firstcover].
 
-(./Geiger.aux)
+(./Geiger.aux
+
+LaTeX Warning: Label `fig:Zeit' multiply defined.
+
+)
 \openout1 = Geiger.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -1493,123 +1497,161 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 60.
 
 \openout3 = Geiger.toc
  [2]
-<Bilder/Aufbau.png, id=50, 586.19pt x 219.82124pt>
+<Bilder/Aufbau.png, id=54, 586.19pt x 219.82124pt>
 File: Bilder/Aufbau.png Graphic file (type png)
 <use Bilder/Aufbau.png>
 Package luatex.def Info: Bilder/Aufbau.png  used on input line 74.
 (luatex.def)             Requested size: 250.95587pt x 94.10536pt.
  [3<./Bilder/Aufbau.png>] [4]
-<Bilder/Bereiche.png, id=69, 691.58376pt x 767.86874pt>
+<Bilder/Bereiche.png, id=73, 691.58376pt x 767.86874pt>
 File: Bilder/Bereiche.png Graphic file (type png)
 <use Bilder/Bereiche.png>
-Package luatex.def Info: Bilder/Bereiche.png  used on input line 125.
+Package luatex.def Info: Bilder/Bereiche.png  used on input line 126.
 (luatex.def)             Requested size: 250.95587pt x 278.63527pt.
  [5<./Bilder/Bereiche.png>]
-<Bilder/Zeit.png, id=79, 685.56125pt x 245.91875pt>
+<Bilder/Zeit.png, id=83, 685.56125pt x 245.91875pt>
 File: Bilder/Zeit.png Graphic file (type png)
 <use Bilder/Zeit.png>
-Package luatex.def Info: Bilder/Zeit.png  used on input line 174.
+Package luatex.def Info: Bilder/Zeit.png  used on input line 175.
 (luatex.def)             Requested size: 250.95587pt x 90.02039pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6]
-<Bilder/SchemaCharakteristik.png, id=92, 492.84125pt x 289.08pt>
+<Bilder/SchemaCharakteristik.png, id=96, 492.84125pt x 289.08pt>
 File: Bilder/SchemaCharakteristik.png Graphic file (type png)
 <use Bilder/SchemaCharakteristik.png>
-Package luatex.def Info: Bilder/SchemaCharakteristik.png  used on input line 193
+Package luatex.def Info: Bilder/SchemaCharakteristik.png  used on input line 194
 .
 (luatex.def)             Requested size: 250.95587pt x 147.19946pt.
- [7<./Bilder/Zeit.png><./Bilder/SchemaCharakteristik.png>]
-<Bilder/Messaufbau.png, id=100, 563.10374pt x 255.95625pt>
+ [7<./Bilder/Zeit.png><./Bilder/SchemaCharakteristik.png>] [8]
+<Bilder/Messaufbau.png, id=110, 563.10374pt x 255.95625pt>
 File: Bilder/Messaufbau.png Graphic file (type png)
 <use Bilder/Messaufbau.png>
-Package luatex.def Info: Bilder/Messaufbau.png  used on input line 218.
+Package luatex.def Info: Bilder/Messaufbau.png  used on input line 221.
 (luatex.def)             Requested size: 250.95587pt x 114.07005pt.
- [8<./Bilder/Messaufbau.png>]
-<Charakteristik.pdf, id=109, 462.528pt x 346.896pt>
-File: Charakteristik.pdf Graphic file (type pdf)
-<use Charakteristik.pdf>
-Package luatex.def Info: Charakteristik.pdf  used on input line 265.
-(luatex.def)             Requested size: 250.95587pt x 188.22089pt.
+ [9<./Bilder/Messaufbau.png>]
+<Bilder/zweischema.png, id=118, 316.18124pt x 578.16pt>
+File: Bilder/zweischema.png Graphic file (type png)
+<use Bilder/zweischema.png>
+Package luatex.def Info: Bilder/zweischema.png  used on input line 254.
+(luatex.def)             Requested size: 250.95587pt x 458.90279pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9]
+[10] [11<./Bilder/zweischema.png>] [12
 
-LaTeX Warning: Command \. invalid in math mode on input line 275.
+]
+<Charakteristik.pdf, id=138, 462.528pt x 346.896pt>
+File: Charakteristik.pdf Graphic file (type pdf)
+<use Charakteristik.pdf>
+Package luatex.def Info: Charakteristik.pdf  used on input line 281.
+(luatex.def)             Requested size: 376.42744pt x 282.33397pt.
 
 
-LaTeX Warning: Command \. invalid in math mode on input line 275.
+LaTeX Warning: Command \. invalid in math mode on input line 291.
 
 
-LaTeX Warning: Command \. invalid in math mode on input line 275.
+LaTeX Warning: Command \. invalid in math mode on input line 291.
 
 Missing character: There is no ̇ (U+0307) in font cmmi10!
 Missing character: There is no ̇ (U+0307) in font cmmi10!
-Missing character: There is no ̇ (U+0307) in font cmmi10!
-
-Overfull \hbox (51.7505pt too wide) detected at line 293
+[13<./Charakteristik.pdf>]
+Overfull \hbox (31.67548pt too wide) detected at line 309
 []
  []
 
-[10<./Charakteristik.pdf>]
-Overfull \hbox (122.32098pt too wide) detected at line 309
-[][]\TU/LatinModernMath(1)/m/n/10.95 𝑇 ≈ []  [] [] 𝛥𝑇 = []
+
+Overfull \hbox (80.40028pt too wide) detected at line 325
+[][]\TU/LatinModernMath(1)/m/n/10.95 𝑇[] ≈ []  𝜇[] [] 𝛥𝑇 = []
  []
 
-<Ladungen.pdf, id=174, 462.528pt x 346.896pt>
-File: Ladungen.pdf Graphic file (type pdf)
-<use Ladungen.pdf>
-Package luatex.def Info: Ladungen.pdf  used on input line 353.
-(luatex.def)             Requested size: 376.42744pt x 282.33397pt.
+<Bilder/Visuell.png, id=196, 775.89874pt x 587.19376pt>
+File: Bilder/Visuell.png Graphic file (type png)
+<use Bilder/Visuell.png>
+Package luatex.def Info: Bilder/Visuell.png  used on input line 339.
+(luatex.def)             Requested size: 250.95587pt x 189.9218pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
- [12<./Ladungen.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+[14]
+<Ladungen.pdf, id=209, 462.528pt x 346.896pt>
+File: Ladungen.pdf Graphic file (type pdf)
+<use Ladungen.pdf>
+Package luatex.def Info: Ladungen.pdf  used on input line 385.
+(luatex.def)             Requested size: 376.42744pt x 282.33397pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15<./Bilder/Visuell.png>] [16<./Ladungen.pdf>]
+
+LaTeX Warning: Command \. invalid in math mode on input line 401.
+
+
+LaTeX Warning: Command \. invalid in math mode on input line 401.
+
+Missing character: There is no ̇ (U+0307) in font cmmi10!
+Missing character: There is no ̇ (U+0307) in font cmmi10!
+
+LaTeX Warning: Command \. invalid in math mode on input line 401.
+
+
+LaTeX Warning: Command \. invalid in math mode on input line 401.
+
+Missing character: There is no ̇ (U+0307) in font cmmi10!
+Missing character: There is no ̇ (U+0307) in font cmmi10!
+[17] [18]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
+[19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
  (./Geiger.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 476.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 476.
 
 
 Package rerunfilecheck Warning: File `Geiger.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `Geiger.aux':
-(rerunfilecheck)             Before: 605A6B5C39BCC304EF9265E7709D87CB;12495
-(rerunfilecheck)             After:  2AE5C0BD583C355F42796F66CF69EF5F;12622.
+(rerunfilecheck)             Before: E3395EF98BF9BF54EBB0F1C64984C522;14863
+(rerunfilecheck)             After:  5DE6E85344BE33B3C050D0919286956B;14990.
 Package rerunfilecheck Info: File `Geiger.toc' has not changed.
-(rerunfilecheck)             Checksum: 23990E5F6F36394CE1C52F7CB4306D77;1358.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 362.
+(rerunfilecheck)             Checksum: 6D256E4BAE7B246D4B221D1B62FC527D;1518.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33235 strings out of 494291
- 156265,1144653 words of node,token memory allocated
- 112666 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 15242 glyph, 2379 attrib
-ute, 65 glue_spec, 342 attribute_list, 1 write nodes
-   avail lists: 1:4,2:1569,3:123,4:34,5:210,6:31,7:1830,8:93,9:264,10:19,11:440
- 36558 multiletter control sequences out of 65536+600000
- 91 fonts using 35937103 bytes
+ 33273 strings out of 494291
+ 195332,1144653 words of node,token memory allocated
+ 136711 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 18277 glyph, 3604 attrib
+ute, 65 glue_spec, 517 attribute_list, 1 write nodes
+   avail lists: 1:6,2:1298,3:148,4:35,5:217,6:35,7:1325,8:95,9:353,10:19,11:464
+ 36572 multiletter control sequences out of 65536+600000
+ 91 fonts using 35936799 bytes
  54i,12n,109p,9116b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinm
-odern-math.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public
-/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/
-opentype/public/lm/lmroman8-regular.otf></home/lasse/.local/texlive/2019/texmf-d
-ist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texli
-ve/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/lasse/.
-local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></h
-ome/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.
-otf>
-Output written on Geiger.pdf (12 pages, 187031 bytes).
+</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-i
+talic.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-m
+ath/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opent
+ype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-d
+ist/fonts/opentype/public/lm/lmroman8-regular.otf></home/lasse/.local/texlive/20
+19/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.l
+ocal/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></ho
+me/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regul
+ar.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsa
+ns10-bold.otf>
+Output written on Geiger.pdf (19 pages, 1473499 bytes).
 
-PDF statistics: 331 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 131072)
- 121 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 392 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 131072)
+ 137 words of extra memory for PDF output out of 10000 (max. 100000000)
 

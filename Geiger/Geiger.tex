@@ -88,6 +88,7 @@
             wird bei Argon eine Energie von 26 eV benötigt. So lässt über die entstandenen Impulse die Energie des einfallenden Teilchens berechnen, da diese proportional zu der Anzahl der
             Ionisationen ist. Die Anzahl der letztendlich gemessenen Impulse hängt jedoch stark von der angelegten Spannung ab, die sich in 5 Bereiche unterteilen lässt.
 
+            \newpage
             \subsubsection*{Bereich I}
                 Bei einer geringen angelegten Spannung von bis zu 50 V ist das elektrische Feld in der Kammer so gering, dass die durch Ionisation freigesetzten Elektronen zumeist Rekombinieren, bevor
                 sie die Anode erreichen. So lässt sich die Intensität oder Energie der einfallenden Teilchen nicht messen.
@@ -199,16 +200,18 @@
 
         \subsection{Anodenstrom}
             Über den an der Anode anfallenden Strom kann bei gemessener Impulsrate die Menge an freigesetzter Ladung pro einfallendem Teilchen $Z$ berechnet werden. Dazu muss der momentane Anodenstrom
-            $I$ durch den zugehörigen Wert der einfallenden Teilchen $N$ geteilt werden. Um die Menge der freigesetzten Ladung in Einheiten der Elementarladungladung anzugeben, muss zudem noch 
+            $I$ durch den zugehörigen Rate der einfallenden Teilchen $N$ geteilt werden. Um die Menge der freigesetzten Ladung in Einheiten der Elementarladungladung anzugeben, muss zudem noch 
             mit dem Kehrwert der Elementarladung $e$ multipliziert werden, sodass sich folgende Formel ergibt.
 
             \begin{equation}
                 Z =  \frac{I}{eN}
                 \label{eqn:Ladung}
             \end{equation}
-        
+    
+    \newpage
     \section{Durchführung}
         \subsection{Messschaltung}
+            Das hier zu untersuchende Messrohr ist mit Argon gefüllt und es wird ein Thallium-204-Präperat als Strahlungsquelle genutzt.
             Zur Untersuchung des Geiger-Müller-Zählrohrs wird folgende Schaltung genutzt:
 
             \FloatBarrier
@@ -228,9 +231,10 @@
 
         \subsection{Charakteristik}
             Um die Charakteristik des verwendeten Geiger-Müller-Zählrohrs zu bestimmen wird eine konstante Intensitätsquelle in Form eines $\beta-$Strahlers vor dem Zählrohr platziert und dann unter 
-            variierender Spannung im Bereich von 230 bis 700 Volt die Intensitätsrate gemessen. Es darf nicht über 700 V gegangen werden, da dann die Dauerentladung einsetzt und das Gerät beschädigt
-            wird.
+            variierender Spannung im Bereich von 230 bis 700 Volt die Intensitätsrate bei einer Integrationszeit von 120 Sekunden gemessen. Es darf nicht über 700 V gegangen werden, da dann die 
+            Dauerentladung einsetzt und das Gerät beschädigt wird.
 
+        \newpage
         \subsection{Totzeit-Bestimmung}
             Die Bestimmung der Totzeit des verwendeten Geiger-Müller-Zählrohrs kann über zwei Methoden durchgeführt werden.
             
@@ -242,17 +246,29 @@
                 Eine genauere Bestimmung der Totzeit ist über die Zwei-Quellen-Methode möglich. Dazu wird zunächst eine Quelle vor den Zähler gestellt und die Intensität gemessen. Dann wird eine
                 weitere Probe neben der bereits platzierten Probe platziert und die gemeinsamme Intensität gemessen. Zuletzt wird die zuerst einzeln gemessene Probe entfernt und die Intensität
                 der, als zweites hinzugefügten, Probe gemessen. Aus diesen drei gemessenen Intensitäten kann die Totzeit über Formel \ref{eqn:Totzeit} berechnet werden.
+
+                \FloatBarrier
+
+                \begin{figure}[h]
+                  \centering
+                  \includegraphics[width = 0.6\textwidth]{Bilder/zweischema.png}
+                  \caption{In der Abbildung sind die 3 verschiedenen Aufbaue zur Messung der Totzeit über die Zwei-Quellen-Methode dargestellt. [1]}
+                  \label{fig:zweischema}
+                \end{figure}
+            
+               \FloatBarrier
+               \noindent
             
         
         \subsection{Freigesetzte Ladungen}
             Um die Menge der pro einfallendem Teilchen freigesetzte Ladung zu bestimmen wird der Zählrohrstrom bei bei verschiedenen Paaren von Spannung und Intensität gemessen. Die Messungen wird 
-            im Bereich von 350 bis 700 V in 50 V Schritten durchgeführt.
+            im Bereich von 350 bis 700 V in 50 V Schritten durchgeführt. Dabei wird eine Integrationszeit von 60 Sekunden verwendet.
             
-
+    \newpage
     \section{Auswertung}
         \subsection{Charakteristik des Geiger-Müller-Zählrohrs}
-                Zur Untersuchung der Charakteristik wird zunächst die gemessene Intensität gegen die Betriebsspannung des Geiger-Müller-Zählrohrs bei einer Integrationszeit von 60 s. Da die 
-                gemessenen Impulse $N$ poisson-verteilt sind, kann deren Fehler wie folgt berechnet werden:
+                Zur Untersuchung der Charakteristik wird zunächst die gemessene Intensität gegen die Betriebsspannung des Geiger-Müller-Zählrohrs bei einer Integrationszeit von 60 s (Tabelle
+                \ref{tab:Kennwerte}) in einer Grafik aufgetragen. Da die gemessenen Impulse $N$ poisson-verteilt sind, kann deren Fehler wie folgt berechnet werden:
 
                 \begin{equation*}
                     \Delta N = \sqrt{N}
@@ -262,7 +278,7 @@
 
                  \begin{figure}[h]
                    \centering
-                   \includegraphics[width = 0.6\textwidth]{Charakteristik.pdf}
+                   \includegraphics[width = 0.9\textwidth]{Charakteristik.pdf}
                    \caption{In der Grafik sind die gemessenen Impulse $N$ gegen die Betriebsspannung $U$ des Geiger-Müller-Zählrohrs aufgetragen. Zudem wurde eine lineare Ausgleichsgerade durch den Plataeubereich gelegt, um die Güte des Geiger-Müller-Zählrohrs zu bestimmen.}
                    \label{fig:Charakteristik}
                  \end{figure}
@@ -272,15 +288,15 @@
                 Aus Grafik \ref{fig:Charakteristik} wird der Plataeubereich, in dem das Geiger-Müller-Zählrohr arbeitet zwischen folgenden Spannungen ermittelt:
 
                 \begin{equation}
-                    \text{Plataeubereich:} \. 380 \, \text{V} \. - \. 590 \, \text{V}
+                    \text{Plataeubereich:}\,\, 380 \, \text{V} \. - \. 590 \, \text{V}
                 \end{equation}
                 \noindent
                 Über diesen Plataeubereich wird eine Ausgleichsgerade zur Ermittlung der Steigung im Plataeubereich gelegt. Die lineare Regression mit der scipy-Funktion curvefit liefert
                 folgende Parameter:
 
                 \begin{align*}
-                    N &= m \cdot U + b
-                    m &= \left(1,2386 \pm 0,3774\right) \frac{1}{V}
+                    N &= mU + b \\
+                    m &= \left(1,2386 \pm 0,3774\right) \frac{1}{V} \\
                     b &= \left(9543,0095 \pm 182,5730\right)
                 \end{align*}
                 \noindent
@@ -289,7 +305,7 @@
 
                 \begin{align}
                     M &= 1-\frac{\left(m \cdot 400 V + b\right)}{\left(m \cdot 500 V + b\right)} = \left(1,2 \pm 0,35\right) \, \% \, \text{pro} \, \text{100 V} \\
-                    \text{mit} \qquad \Delta M &= \sqrt{\left(\frac{1}{\left( m \cdot 500 V + b \right)} \cdot \Delta \left(m \cdot 400 V + b\right) \right)^2 + \left( \frac{ \left(m \cdot 400 V + b \right)}{\left(m \cdot 500 V + b \right)^2} \cdot \Delta \left(m \cdot 500 V + b \right)\right)^2}
+                    \text{mit} \, \Delta M &= \sqrt{\left(\frac{1}{\left( m \cdot 500 V + b \right)} \cdot \Delta \left(m \cdot 400 V + b\right) \right)^2 + \left( \frac{ \left(m \cdot 400 V + b \right)}{\left(m \cdot 500 V + b \right)^2} \cdot \Delta \left(m \cdot 500 V + b \right)\right)^2}
                 \end{align}
 
 
@@ -299,18 +315,34 @@
                 der Werte berechnet werden. 
 
                 \begin{equation}
-                    N_1 = \frac{(96941 \pm 310)}{120s} \qquad N_2 = \frac{(76518 \pm 277)}{120s} \qquad N_{1+2} = \frac{(158479 \pm 399)}{120s}
+                    N_1 = \frac{(96941 \pm 310)}{60} \qquad N_2 = \frac{(76518 \pm 277)}{60} \qquad N_{1+2} = \frac{(158479 \pm 399)}{60}
                 \end{equation}
                 \noindent
                 Über Formel \ref{eqn:Totzeit} wird aus den obrigen Werten die Totzeit ausgerechnet.
 
                 \begin{equation}
-                    T \approx \left(960 \pm 40\right) \, \text{ns} \qquad \text{mit} \qquad \Delta T = \sqrt{\left(\frac{N_{1+2}-N_1}{2N_1N_2^2} \cdot \Delta N_2\right)^2 + \left(\frac{N_{1+2}-N_2}{2N_2N_1^2} \cdot \Delta N_1\right)^2 + \left(-\frac{1}{2N_1N_2} \cdot \Delta N_{1+2}\right)^2}
+                    T_2 \approx \left(115 \pm 5\right) \, \mu \text{s} \, \text{mit} \, \Delta T = \sqrt{\left(\frac{N_{1+2}-N_1}{2N_1N_2^2} \cdot \Delta N_2\right)^2 + \left(\frac{N_{1+2}-N_2}{2N_2N_1^2} \cdot \Delta N_1\right)^2 + \left(-\frac{1}{2N_1N_2} \cdot \Delta N_{1+2}\right)^2}
                 \end{equation}
 
             \subsubsection*{Visuelle Methode}   
-                sodass      
-                sodass
+                Zur Bestimmung der Totzeit muss der Abstand zwischen dem Ersten Großen und ersten kleineren Peak in der visuellen Darstellung der Spannungsimpulse durch das Oszilloskop abgelesen 
+                werden. Dieser zeitliche Abstand entspricht gemäß Grafik \ref{fig:Zeit} der Totzeit.  Aus Abbildung \ref{fig:Zeit} lässt sich die Totzeit $T_{\text{vis}}$ ablesen.
+
+                \begin{equation*}
+                    T_{\text{vis}} \approx 100 \mu s \qquad \text{mit} \qquad \text{1 Kästchen} \equiv 100 \mu s
+                \end{equation*}
+
+                \FloatBarrier
+
+                \begin{figure}[h]
+                  \centering
+                  \includegraphics[width = 0.6\textwidth]{Bilder/Visuell.png}
+                  \caption{In der Abbildung ist eine Aufnahme des Oszilloskopbildes zur Visualisierung der Spannungsimpulse auf dem Anodendraht. Ein Kästchen entspricht dabei einem zeitlichen Abstand von 100 $\mu s$. [1]}
+                  \label{fig:Zeit}
+                \end{figure}
+
+            \FloatBarrier
+            \noindent
 
 
 
@@ -326,7 +358,7 @@
             \begin{table}[h]
                 \centering
                 \caption{In der Tabelle sind Wertepaare aus Anodenstrom und Impulsrate, sowie die daraus berechnete freigesetzte Ladung pro einfallendem Teilchen eingetrage.}
-                
+                \label{tab:Ladungen}
                 \begin{tabular}{c c c }
                     \toprule
                     {I [nA]} & {Impulsrate [1/s]} & {Z [$e \cdot 10^{10}$]} \\
@@ -358,5 +390,87 @@
             \FloatBarrier
 
             \noindent
-            Diese Grafik gibt einen linearen Zusammenhang zwischen freigesetzten Ladungen pro einfallendem Teilchen und dem Anodenstrom.
+            Diese Grafik gibt einen linearen Zusammenhang zwischen freigesetzten Ladungen pro einfallendem Teilchen und dem Anodenstrom wieder.
+
+        \newpage
+        \subsection{Diskussion}
+            Die Untersuchung der charakteristik des Geiger-Müller-Zählrohrs konnte folgende Eigenschaften des Zählrohrs ermitteln.
+            \begin{align*}
+                \text{Plataeubereich:}&\,\, 380 \, \text{V} \. - \. 590 \, \text{V} \\
+                \text{Plataeusteigung/100 V:}&\, \left(1,2 \pm 0,35\right) \, \% 
+            \end{align*}
+            \noindent
+            Zudem ist aus Grafik \ref{fig:Charakteristik} zu erkennen, dass Betriebsspannung über 650 V vermieden werden müssen, da hier der Bereich der Selbstentladung einsetzt und Betrieb unter 
+            dieser Spannung das Zählrohr beschädigen würde. \newline
+            Die Werte der beiden Totzeiten
+            \begin{equation*}
+                T_{\text{vis}} \approx 100 \mu s \qquad T_2 \approx \left(115 \pm 5\right) \, \mu \text{s}
+            \end{equation*}
+            \noindent
+            weichen um nicht mehr als 15 \% voneinander ab und liegen beide in der für Geiger-Müller-Zählrohre typischen Größenordnung von 100 $\mu s$.
+            Die zuletzt berechneten freigesetzte Ladung pro einfallendem Teilchen \ref{tab:Ladungen} sollte proportional zur auf der Anode gemessenen Stromstärke sein. Dies lässt sich über 
+            Grafik \ref{fig:Ladungen} bestätigen.  
+            \newline
+            Insgesamt hat die Untersuchung des Zählrohrs die typischen Eigenschaften und Parameter eines Geiger-Müller-Zählrohrs bestätigt.
+                 
+
+        
+        \newpage
+        \section{Literaturverzeichnis}
+                [1] \textit{Versuchsanleitung V703 - Das Geiger-Müller-Zählrohr.} TU Dortmund, 2020 
+              
+            
+            \newpage
+            \begin{table}[h]
+                \centering
+                \caption{In der Tabelle sind Wertepaare aus Betriebsspannung des Zählrohrs U und gemessenen Impulsen bei einer Integrationszeit von 120 Sekunden eingetragen.}
+                \label{tab:Kennwerte}
+                \begin{tabular}{c c c }
+                    \toprule
+                    {U [V]} & {Impulse} \\
+                    \midrule
+                    320 &	$9672   \pm 99 $ \\
+                    330 &	$9689   \pm 99 $ \\
+                    340 &	$9580   \pm 98 $ \\
+                    350 &	$9837   \pm 100$ \\
+                    360 &	$9886   \pm 100$ \\
+                    370 &	$10041  \pm 101$ \\
+                    380 &	$9996   \pm 100$ \\
+                    390 &	$9943   \pm 100$ \\
+                    400 &	$9995   \pm 100$ \\
+                    410 &	$9980   \pm 100$ \\
+                    420 &	$9986   \pm 100$ \\
+                    430 &	$9960   \pm 100$ \\
+                    440 &	$10219  \pm 102$ \\
+                    450 &	$10264  \pm 102$ \\
+                    460 &	$10174  \pm 101$ \\
+                    470 &	$10035  \pm 101$ \\
+                    480 &	$10350  \pm 102$ \\
+                    490 &	$10290  \pm 102$ \\
+                    500 &	$10151  \pm 101$ \\
+                    510 &	$10110  \pm 101$ \\
+                    520 &	$10255  \pm 102$ \\
+                    530 &	$10151  \pm 101$ \\
+                    540 &	$10351  \pm 102$ \\
+                    550 &	$10184  \pm 101$ \\
+                    560 &	$10137  \pm 101$ \\
+                    570 &	$10186  \pm 101$ \\
+                    580 &	$10171  \pm 101$ \\
+                    590 &	$10171  \pm 101$ \\
+                    600 &	$10253  \pm 102$ \\
+                    610 &	$10368  \pm 102$ \\
+                    620 &	$10365  \pm 102$ \\
+                    630 &	$10224  \pm 102$ \\
+                    640 &	$10338  \pm 102$ \\
+                    650 &	$10493  \pm 103$ \\
+                    660 &	$10467  \pm 103$ \\
+                    670 &	$10640  \pm 104$ \\
+                    680 &	$10939  \pm 105$ \\
+                    690 &	$11159  \pm 106$ \\
+                    700 &	$11547  \pm 108$ \\
+                    \bottomrule
+                \end{tabular}
+            \end{table}
+        \noindent
+            
         \end{document}
