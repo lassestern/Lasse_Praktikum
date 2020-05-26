@@ -182,9 +182,9 @@
 
         \subsection{Charakteristik des Geiger-Müller-Zählrohrs}
             Das Geiger-Müller-Zählrohr arbeitet in Bereich IV der Spannung. Dieser zeichnet sich durch eine konstante Intensität bei steigender Spannung aus. Dieser Bereich konstanter Intensität
-            wird als Plateau bezeichnet und charakterisiert die Güte eines Geiger-Müller-Zählrohrs. Die Güte ist perfekt, wenn die Steigung des Plataeus null und das Plataeu möglichst lang ist. Da 
-            trotz des hinzugefügten Alkohols noch immer geringfügig Nachentladungen auftreten, die zur Intensität hinzugezählt werden, ist das Plataeu in der Praxis nicht konstant, sondern weißt eine 
-            leichte Steigung auf. Während das Plataeu dem Arbeitsbereich des Geiger-Müller-Zählrohrs entspricht, muss der sich anschließende Bereich strikt gemieden werden, da sonst wie bereits 
+            wird als Plateau bezeichnet und charakterisiert die Güte eines Geiger-Müller-Zählrohrs. Die Güte ist perfekt, wenn die Steigung des Plateaus null und das Plateau möglichst lang ist. Da 
+            trotz des hinzugefügten Alkohols noch immer geringfügig Nachentladungen auftreten, die zur Intensität hinzugezählt werden, ist das Plateau in der Praxis nicht konstant, sondern weißt eine 
+            leichte Steigung auf. Während das Plateau dem Arbeitsbereich des Geiger-Müller-Zählrohrs entspricht, muss der sich anschließende Bereich strikt gemieden werden, da sonst wie bereits 
             beschrieben hohe Ströme das Zählrohr beschädigen.
 
             \FloatBarrier
@@ -192,7 +192,7 @@
             \begin{figure}[h]
               \centering
               \includegraphics[width = 0.6\textwidth]{Bilder/SchemaCharakteristik.png}
-              \caption{In der Abbildung ist Spannungsbereich IV und der Beginn von Spannungsbereich V detailliert dargestellt. Das eingezeichnete Plataeu markiert den tatsächlichen Arebitsbereich eines Geiger-Müller-Zählrohrs. Der sich anschließende Bereich V stellt aufgrund hoher Stromstärken eine Gefahr für das Zählrohr dar.[1]}
+              \caption{In der Abbildung ist Spannungsbereich IV und der Beginn von Spannungsbereich V detailliert dargestellt. Das eingezeichnete Plateau markiert den tatsächlichen Arebitsbereich eines Geiger-Müller-Zählrohrs. Der sich anschließende Bereich V stellt aufgrund hoher Stromstärken eine Gefahr für das Zählrohr dar.[1]}
               \label{fig:SchemaCharakteristik}
             \end{figure}
 
@@ -232,7 +232,8 @@
         \subsection{Charakteristik}
             Um die Charakteristik des verwendeten Geiger-Müller-Zählrohrs zu bestimmen wird eine konstante Intensitätsquelle in Form eines $\beta-$Strahlers vor dem Zählrohr platziert und dann unter 
             variierender Spannung im Bereich von 230 bis 700 Volt die Intensitätsrate bei einer Integrationszeit von 120 Sekunden gemessen. Es darf nicht über 700 V gegangen werden, da dann die 
-            Dauerentladung einsetzt und das Gerät beschädigt wird.
+            Dauerentladung einsetzt und das Gerät beschädigt wird. Zudem wird eine hohe Impulsanzahl im Bereich von 10000 Impulsen gemessen, damit der statistische Fehler der Messung nicht betrachtet
+            werden muss. 
 
         \newpage
         \subsection{Totzeit-Bestimmung}
@@ -245,7 +246,7 @@
             \subsubsection*{Zwei-Quellen-Methode}
                 Eine genauere Bestimmung der Totzeit ist über die Zwei-Quellen-Methode möglich. Dazu wird zunächst eine Quelle vor den Zähler gestellt und die Intensität gemessen. Dann wird eine
                 weitere Probe neben der bereits platzierten Probe platziert und die gemeinsamme Intensität gemessen. Zuletzt wird die zuerst einzeln gemessene Probe entfernt und die Intensität
-                der, als zweites hinzugefügten, Probe gemessen. Aus diesen drei gemessenen Intensitäten kann die Totzeit über Formel \ref{eqn:Totzeit} berechnet werden.
+                der, als zweites hinzugefügten, Probe gemessen. Aus diesen drei gemessenen Intensitäten kann die Totzeit über Formel \ref{eqn:Totzeit} berechnet werden. 
 
                 \FloatBarrier
 
@@ -262,7 +263,8 @@
         
         \subsection{Freigesetzte Ladungen}
             Um die Menge der pro einfallendem Teilchen freigesetzte Ladung zu bestimmen wird der Zählrohrstrom bei bei verschiedenen Paaren von Spannung und Intensität gemessen. Die Messungen wird 
-            im Bereich von 350 bis 700 V in 50 V Schritten durchgeführt. Dabei wird eine Integrationszeit von 60 Sekunden verwendet.
+            im Bereich von 350 bis 700 V in 50 V Schritten durchgeführt. Dabei wird eine Integrationszeit von 60 Sekunden verwendetund darauf geachtet, dass die Impulsrate nicht 
+            $100 \frac{\text{Imp}}{s}$ übersteigt, da dann die Messung durch die Totzeit beeinflusst wird. 
             
     \newpage
     \section{Auswertung}
@@ -279,19 +281,19 @@
                  \begin{figure}[h]
                    \centering
                    \includegraphics[width = 0.9\textwidth]{Charakteristik.pdf}
-                   \caption{In der Grafik sind die gemessenen Impulse $N$ gegen die Betriebsspannung $U$ des Geiger-Müller-Zählrohrs aufgetragen. Zudem wurde eine lineare Ausgleichsgerade durch den Plataeubereich gelegt, um die Güte des Geiger-Müller-Zählrohrs zu bestimmen.}
+                   \caption{In der Grafik sind die gemessenen Impulse $N$ gegen die Betriebsspannung $U$ des Geiger-Müller-Zählrohrs aufgetragen. Zudem wurde eine lineare Ausgleichsgerade durch den Plateaubereich gelegt, um die Güte des Geiger-Müller-Zählrohrs zu bestimmen.}
                    \label{fig:Charakteristik}
                  \end{figure}
              
                 \FloatBarrier
                 \noindent
-                Aus Grafik \ref{fig:Charakteristik} wird der Plataeubereich, in dem das Geiger-Müller-Zählrohr arbeitet zwischen folgenden Spannungen ermittelt:
+                Aus Grafik \ref{fig:Charakteristik} wird der Plateaubereich, in dem das Geiger-Müller-Zählrohr arbeitet zwischen folgenden Spannungen ermittelt:
 
                 \begin{equation}
-                    \text{Plataeubereich:}\,\, 380 \, \text{V} \. - \. 590 \, \text{V}
+                    \text{Plateaubereich:}\,\, 380 \, \text{V} \. - \. 590 \, \text{V}
                 \end{equation}
                 \noindent
-                Über diesen Plataeubereich wird eine Ausgleichsgerade zur Ermittlung der Steigung im Plataeubereich gelegt. Die lineare Regression mit der scipy-Funktion curvefit liefert
+                Über diesen Plateaubereich wird eine Ausgleichsgerade zur Ermittlung der Steigung im Plateaubereich gelegt. Die lineare Regression mit der scipy-Funktion curvefit liefert
                 folgende Parameter:
 
                 \begin{align*}
@@ -300,7 +302,7 @@
                     b &= \left(9543,0095 \pm 182,5730\right)
                 \end{align*}
                 \noindent
-                Die Güte des Geiger-Müller-Zählrohrs wird über die Steigung des Plataeubereichs $M$ angegeben. Da diese in Zunahme in \% pro 100 V angegeben wird, kann sie wie folgt über die 
+                Die Güte des Geiger-Müller-Zählrohrs wird über die Steigung des Plateaubereichs $M$ angegeben. Da diese in Zunahme in \% pro 100 V angegeben wird, kann sie wie folgt über die 
                 berechnete lineare Regression bestimmt werden:
 
                 \begin{align}
@@ -315,15 +317,16 @@
                 der Werte berechnet werden. 
 
                 \begin{equation}
-                    N_1 = \frac{(96941 \pm 310)}{60} \qquad N_2 = \frac{(76518 \pm 277)}{60} \qquad N_{1+2} = \frac{(158479 \pm 399)}{60}
+                    N_1 = \frac{(96941 \pm 310)}{120} \qquad N_2 = \frac{(76518 \pm 277)}{120} \qquad N_{1+2} = \frac{(158479 \pm 399)}{120}
                 \end{equation}
                 \noindent
                 Über Formel \ref{eqn:Totzeit} wird aus den obrigen Werten die Totzeit ausgerechnet.
 
-                \begin{equation}
-                    T_2 \approx \left(115 \pm 5\right) \, \mu \text{s} \, \text{mit} \, \Delta T = \sqrt{\left(\frac{N_{1+2}-N_1}{2N_1N_2^2} \cdot \Delta N_2\right)^2 + \left(\frac{N_{1+2}-N_2}{2N_2N_1^2} \cdot \Delta N_1\right)^2 + \left(-\frac{1}{2N_1N_2} \cdot \Delta N_{1+2}\right)^2}
-                \end{equation}
-
+                \begin{align*}
+                    &T_2 \approx \left(115 \pm 5\right) \, \mu \text{s} \\
+                    &\text{mit} \, \Delta T = \sqrt{\left(\frac{N_{1+2}-N_1}{2N_1N_2^2} \cdot \Delta N_2\right)^2 + \left(\frac{N_{1+2}-N_2}{2N_2N_1^2} \cdot \Delta N_1\right)^2 + \left(-\frac{1}{2N_1N_2} \cdot \Delta N_{1+2}\right)^2}
+                \end{align*}
+                
             \subsubsection*{Visuelle Methode}   
                 Zur Bestimmung der Totzeit muss der Abstand zwischen dem Ersten Großen und ersten kleineren Peak in der visuellen Darstellung der Spannungsimpulse durch das Oszilloskop abgelesen 
                 werden. Dieser zeitliche Abstand entspricht gemäß Grafik \ref{fig:Zeit} der Totzeit.  Aus Abbildung \ref{fig:Zeit} lässt sich die Totzeit $T_{\text{vis}}$ ablesen.
@@ -396,8 +399,8 @@
         \subsection{Diskussion}
             Die Untersuchung der charakteristik des Geiger-Müller-Zählrohrs konnte folgende Eigenschaften des Zählrohrs ermitteln.
             \begin{align*}
-                \text{Plataeubereich:}&\,\, 380 \, \text{V} \. - \. 590 \, \text{V} \\
-                \text{Plataeusteigung/100 V:}&\, \left(1,2 \pm 0,35\right) \, \% 
+                \text{Plateaubereich:}&\,\, 380 \, \text{V} \. - \. 590 \, \text{V} \\
+                \text{Plateausteigung/100 V:}&\, \left(1,2 \pm 0,35\right) \, \% 
             \end{align*}
             \noindent
             Zudem ist aus Grafik \ref{fig:Charakteristik} zu erkennen, dass Betriebsspannung über 650 V vermieden werden müssen, da hier der Bereich der Selbstentladung einsetzt und Betrieb unter 
